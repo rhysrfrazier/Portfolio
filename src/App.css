@@ -1,0 +1,227 @@
+/* Nav and body and universal */
+
+body {
+  background-color: #3C474B;
+  /* font-family: 'Comfortaa', sans-serif;
+  the one above might actually be easier to read... either that or I need to add spaces between characters... */
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .6px;
+  margin: 0 auto;
+  padding: 0;
+
+  position: relative;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.routesContainer {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: #162521;
+
+  z-index: 1;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #4f7cac;
+}
+
+.navbar h2 {
+  font-weight: 400;
+}
+
+.selected {
+  color: #c0e0de;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 10vh;
+  background-color: #162521;
+}
+
+.footerContact {
+  text-align: right;
+  margin: 2vh 0 2vh 0;
+}
+
+.footerContact p {
+  padding: 0 2vw 0 2vw;
+  margin: 0;
+  color: #4f7cac;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  color: #4f7cac;
+  padding: 0 2vw 0 2vw;
+}
+
+/* about */
+
+.aboutSection {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 100%;
+}
+
+.heyThere {
+  color: #c0e0de;
+  background-color: #162521;
+  padding: 1rem 2rem 2rem 2rem;
+  width: 30%;
+  /* margin: rem; */
+}
+
+.heyThere h1 {
+  font-weight: 500;
+}
+
+.pictures {
+  border: 1px solid red;
+  width: 40%;
+  height: 400px;
+  position: relative;
+  margin: 0 0 0 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutOne {
+  border: 4px solid #9eefe5;
+  border-radius: 50%;
+  position: absolute;
+  /* left: 10rem; */
+  background-color: black;
+  /* width: 275px; */
+}
+
+.aboutTwo {
+  border: 4px solid #9eefe5;
+  border-radius: 50%;
+  max-width: 9rem;
+  position: absolute;
+  display: none;
+}
+
+.aboutThree {
+  border: 4px solid #9eefe5;
+  border-radius: 50%;
+  max-width: 4rem;
+  position: absolute;
+  display: none;
+}
+
+/* contact */
+/* want to change the size and font of the input fields */
+
+.contactContainer {
+  margin: auto;
+  border-radius: 5px;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  color: #c0e0de;
+  background-color: #162521;
+  border: 2px solid #9eefe5;
+
+  padding: 3rem;
+}
+
+.nameEmail {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1rem 0 3px 0;
+}
+
+.name,
+.email {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 230px;
+}
+
+.labelText {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.subject {
+  width: 99%;
+  height: 19px;
+  margin: 8px 0 8px 0;
+}
+
+input {
+  font-size: 16px;
+}
+
+textarea {
+  width: 99%;
+  margin-top: 8px;
+  resize: none;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 16px;
+}
+
+.sendMessageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.sendMessage {
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .6px;
+  font-size: 18px;
+
+  padding: 4px 30px 4px 30px;
+  border-radius: 6px;
+  margin-top: .5rem;
+  border: none;
+
+  background-color: #9eefe5;
+  color: #162521;
+}
