@@ -1,10 +1,12 @@
-export default function About(){
-    return(
+export default function About() {
+    return (
         <div className='aboutSection'>
             <div className='pictures'>
-                <img className='aboutOne' alt="these are just placeholders and don't matter yet" src='/deadbatomon_small.png'/>
-                <img className='aboutTwo' alt="these are just placeholders and don't matter yet" src='/worm.png'/>
-                <img className='aboutThree' alt="these are just placeholders and don't matter yet" src='/stopWorm.png'/>
+                <div className='insidePics'>
+                    <img className='aboutOne' alt="these are just placeholders and don't matter yet" src='/deadbatomon_small.png' />
+                    <img className='aboutTwo' alt="these are just placeholders and don't matter yet" src='/worm.png' />
+                    <img className='aboutThree' alt="these are just placeholders and don't matter yet" src='/stopWorm.png' />
+                </div>
             </div>
             <div className='heyThere'>
                 <h1>Hey There!</h1>
@@ -12,5 +14,5 @@ export default function About(){
                 <p>The cite is made with HTML5, CSS3, and JS in a React framework.</p>
             </div>
         </div>
-    ) 
+    )
 }

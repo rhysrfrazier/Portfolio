@@ -90,9 +90,9 @@ i {
 /* about */
 
 .aboutSection {
-  /* border: 1px solid red; */
+  margin-right: 5%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   max-width: 100%;
 }
@@ -102,7 +102,7 @@ i {
   background-color: #162521;
   padding: 1rem 2rem 2rem 2rem;
   width: 30%;
-  /* margin: rem; */
+  border-radius: 5px;
 }
 
 .heyThere h1 {
@@ -110,22 +110,26 @@ i {
 }
 
 .pictures {
-  border: 1px solid red;
-  width: 40%;
-  height: 400px;
-  position: relative;
-  margin: 0 0 0 3rem;
+  width: 550px;
+  height: 420px;
   display: flex;
   justify-content: center;
+}
+
+.insidePics {
+  width: 70%;
+  position: relative;
+
+  display: flex;
+  justify-content: right;
 }
 
 .aboutOne {
   border: 4px solid #9eefe5;
   border-radius: 50%;
   position: absolute;
-  /* left: 10rem; */
   background-color: black;
-  /* width: 275px; */
+  width: 275px;
 }
 
 .aboutTwo {
@@ -133,19 +137,23 @@ i {
   border-radius: 50%;
   max-width: 9rem;
   position: absolute;
-  display: none;
+  top: 49%;
+  left: 13%;
 }
 
 .aboutThree {
   border: 4px solid #9eefe5;
   border-radius: 50%;
-  max-width: 4rem;
+  max-width: 6rem;
   position: absolute;
-  display: none;
+
+  bottom: 0;
+  left: 47%;
 }
 
+
+
 /* contact */
-/* want to change the size and font of the input fields */
 
 .contactContainer {
   margin: auto;
