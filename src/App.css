@@ -156,23 +156,25 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  min-width: 100%;
   color: #c0e0de;
 }
 
 .projects p {
   font-weight: 400;
   font-size: 22px;
+  align-self: center;
+  margin-top: 2rem;
 }
 
 .projectsContainer {
   display: flex;
-  overflow-x: auto;
+  flex-direction: column;
+  overflow-y: auto;
 
-  height: 60%;
-  width: 85%;
+  min-width: 100%;
 
-  scroll-snap-type: both mandatory;
+  margin: 10vh 0 10vh 0;
 }
 
 .projectLite {
@@ -185,11 +187,12 @@ i {
   align-items: center;
   justify-content: center;
 
-  min-width: 600px;
+  align-self: center;
 
-  margin: 0 2rem 0 2rem;
+  width: 600px;
 
-  scroll-snap-align: none center;
+  margin: 2rem 0 2rem 0;
+  padding-bottom: 2rem;
 }
 
 .projectLite img {
