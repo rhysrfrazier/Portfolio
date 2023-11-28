@@ -20,9 +20,9 @@ export default function Contact() {
 
     return (
         <div className='contactContainer'>
-            <h1>Send Me a Message</h1>
-            <p>Have any questions or feedback? I'd love to hear from you!</p>
-            <form className='contactForm' onSubmit={handleSubmit}>
+            <h1>Send Me a Message - Coming Soon!</h1>
+            <p>The contact form isn't complete quite yet, but in the meantime, find me on <a href='https://www.linkedin.com/in/rhysrfrazier/' target='_blank' className='tempLink'>LinkedIn</a> or <a href='mailto:rhysrfrazier@gmail.com' target='_blank' className='tempLink'>email me</a>.</p>
+            {/* <form className='contactForm' onSubmit={handleSubmit}>
                 <div className='nameEmail'>
                     <label className='name'>
                         <span className='labelText'>Your name:</span>
@@ -60,7 +60,7 @@ export default function Contact() {
                     onClick={handleSubmit}
                     >Send</button>
                 </div>
-            </form>
+            </form> */}
         </div>
     )
 }

@@ -20,9 +20,9 @@ export default function Nav() {
             <Link to='/projects' >
                 <h2 className={makeActive('/projects')}>Projects</h2>
             </Link>
-            <Link to='/resume' >
+            {/* <Link to='/resume' >
                 <h2 className={makeActive('/resume')}>Resume</h2>
-            </Link>
+            </Link> */}
             <Link to='/contact' >
                 <h2 className={makeActive('/contact')}>Get in Touch</h2>
             </Link>

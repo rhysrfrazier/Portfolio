@@ -326,6 +326,10 @@ i {
   padding: 3rem;
 }
 
+.tempLink {
+  color: #4f7cac;
+}
+
 .nameEmail {
   display: flex;
   justify-content: space-between;

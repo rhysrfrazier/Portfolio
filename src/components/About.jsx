@@ -3,14 +3,14 @@ export default function About() {
         <div className='aboutSection'>
             <div className='pictures'>
                 <div className='insidePics'>
-                    <img className='aboutOne' alt="these are just placeholders and don't matter yet" src='/deadbatomon_small.png' />
-                    <img className='aboutTwo' alt="these are just placeholders and don't matter yet" src='/worm.png' />
-                    <img className='aboutThree' alt="these are just placeholders and don't matter yet" src='/stopWorm.png' />
+                    <img className='aboutOne' alt="Rhys and Oliver the cat sitting together" src='me+ollie.jpg' />
+                    <img className='aboutTwo' alt="A screenshot of some code from this site" src='code.png' />
+                    <img className='aboutThree' alt="A stack of books" src='bookstack.jpg' />
                 </div>
             </div>
             <div className='heyThere'>
                 <h1>Hey There!</h1>
-                <p>My name's Rhys! I'm here, I'm queer, and I'm a junior engineer - with an interest in accessible design and an eye for nit-picky details. That's why I despise this portfolio, because it doesn't look how I want it to yet! But since you're here, you're welcome to poke around anyway</p>
+                <p>My name's Rhys! I'm here, I'm queer, and I'm a junior engineer - with an interest in accessible design and an eye for nit-picky details. My MA is in English, but coding is more fun than copywriting, so I traded in Word for VSCode.</p>
                 <p>The cite is made with HTML5, CSS3, and JS in a React framework.</p>
             </div>
         </div>
