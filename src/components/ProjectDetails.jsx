@@ -4,8 +4,8 @@ export default function ProjectDetails({ onClose, selectedProject }) {
     return (
         <div className='details'>
             <div className='detailModal'>
-                <button onClick={onClose}>
-                    <i area-hidden='true' className='fa-solid fa-x'></i>
+                <button onClick={onClose} className='close'>
+                    <i area-hidden='true' className='fa-solid fa-x fa-2xl'></i>
                     <span class='fa-sr-only'>close</span>
                 </button>
                 <div className='left'>
@@ -17,12 +17,12 @@ export default function ProjectDetails({ onClose, selectedProject }) {
                         )}
                     </div>
                     <div className='projectLinks'>
-                        <a href={selectedProject.github}>Github</a>
-                        {selectedProject.app !== '' ? <a href={selectedProject.app}>App</a> : null}
+                        <a href={selectedProject.github} target='_blank'>Github</a>
+                        {selectedProject.app !== '' ? <a href={selectedProject.app} target='_blank'>App</a> : null}
                     </div>
                 </div>
                 <div className='right'>
-                    <img src={selectedProject.img} alt='screenshot of app homepage'/>
+                    <img className='detailimg' src={selectedProject.img} alt='screenshot of app homepage'/>
                 </div>
             </div>
         </div>
