@@ -309,6 +309,7 @@ i {
   border-radius: 3px;
 }
 
+
 /* contact */
 
 .contactContainer {
@@ -393,3 +394,26 @@ textarea {
   background-color: #9eefe5;
   color: #162521;
 }
+
+/* smaller screens */
+
+@media screen and (max-width: 1300px) {
+  .detailModal {
+    flex-direction: column;
+    overflow-y: auto;
+    height: 70vh;
+  }
+
+  .projectLinks {
+    min-width: 50%;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .detailimg {
+    margin-top: 0;
+  }
+}
+
+/* mobile */
