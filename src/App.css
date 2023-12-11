@@ -445,7 +445,7 @@ textarea {
 
   .pictures {
     width: 100vw;
-    height:auto;
+    height: auto;
     position: static;
     margin: 0 auto;
     margin-top: 5rem;
@@ -478,8 +478,34 @@ textarea {
     width: 100vw;
   }
 
-  /* Do something different with projects and project details /*
+  /*Projects */
 
-  /* maybe do something different with get in touch /*
+  .projectLite {
+    width: 80vw;
+  }
+
+  .projectLite img {
+    max-width: 70vw;
+  }
+
+  .projectLite h1 {
+    text-align: center;
+  }
+
+  .projectLinks {
+    width: 65vw;
+  }
+
+  .detailModal {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    width: auto;
+    margin: 2rem;
+  }
+
+  .detailimg {
+   display: none
+  }
 
 }
