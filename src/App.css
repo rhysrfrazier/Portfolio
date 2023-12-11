@@ -95,12 +95,25 @@ i {
   max-width: 100%;
 }
 
+.heyContainer {
+  /* border: 1px solid red; */
+  margin-right: 3rem;
+  width: 50%;
+  /* height: 420px; */
+  display: flex;
+  justify-content: center;
+}
+
 .heyThere {
   color: #c0e0de;
   background-color: #162521;
   padding: 1rem 2rem 2rem 2rem;
-  width: 30%;
+  width: 70%;
   border-radius: 7px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .heyThere h1 {
@@ -315,6 +328,7 @@ i {
 .contactContainer {
   margin: auto;
   border-radius: 7px;
+
 
   justify-content: center;
   display: flex;
