@@ -316,6 +316,7 @@ i {
 
 .detailimg {
   max-width: 500px;
+  max-height: 400px;
   margin: 2rem;
   border-radius: 3px;
 }

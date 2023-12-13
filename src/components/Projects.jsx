@@ -28,6 +28,14 @@ const projects = [
         app: '',
         techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='mongodb-svgrepo-com.png' alt='MongoDB' />, <img src='bluemongoose.png' alt='Mongoose' className='mongoose' />, <img src='blueexpress.png' alt='express' />, <img src='react-svgrepo-com.png' alt='React' />, <img src='node-js-svgrepo-com.png' alt='Node JS' /> ]
     },
+    {
+        title: 'Pac(ker)Man',
+        img: 'p4Screen.png',
+        desc: "Pac(ker)Man is a light-weight inventory management system to help keep track of supply locations and states of repair when packing and unpacking. The current iteration allows user to pack and unpack items based on a single, user-generated event to be attended.",
+        github: 'https://github.com/rhysrfrazier/packerman',
+        app: '',
+        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='pythonBlue.png' alt='Python3' />, <img src='djangoBlue.png' alt='Django' className='mongoose' />, <img src='react-svgrepo-com.png' alt='React' />, <img src='node-js-svgrepo-com.png' alt='Node JS' /> ]
+    }
 ]
 
 export default function Projects() {
