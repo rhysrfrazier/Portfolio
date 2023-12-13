@@ -8,7 +8,7 @@ const projects = [
         desc: "Pac(ker)Man is a light-weight inventory management system to help keep track of supply locations and states of repair when packing and unpacking. The current iteration allows user to pack and unpack items based on a single, user-generated event to be attended.",
         github: 'https://github.com/rhysrfrazier/packerman',
         app: '',
-        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='pythonBlue.png' alt='Python3' />, <img src='djangoBlue.png' alt='Django' />, <img src='postgresBlue.png' alt='postgreSQL'/>, <img src='react-svgrepo-com.png' alt='React' />, <img src='node-js-svgrepo-com.png' alt='Node JS' /> ]
+        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript' />, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='pythonBlue.png' alt='Python3' />, <img src='djangoBlue.png' alt='Django' />, <img src='postgresBlue.png' alt='postgreSQL' />, <img src='react-svgrepo-com.png' alt='React' />, <img src='node-js-svgrepo-com.png' alt='Node JS' />]
     },
     {
         title: 'Visit Seattle',
@@ -16,7 +16,7 @@ const projects = [
         desc: "A full stack, single-page application to help Seattle's visitors find restaurants, activities, and lodging. A collaborative effort with a group of wonderful folks.",
         github: 'https://github.com/rhysrfrazier/Visit_Seattle',
         app: '',
-        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='mongodb-svgrepo-com.png' alt='MongoDB' />, <img src='bluemongoose.png' alt='Mongoose' className='mongoose' />, <img src='blueexpress.png' alt='express' />, <img src='react-svgrepo-com.png' alt='React' />, <img src='node-js-svgrepo-com.png' alt='Node JS' /> ]
+        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript' />, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='mongodb-svgrepo-com.png' alt='MongoDB' />, <img src='bluemongoose.png' alt='Mongoose' className='mongoose' />, <img src='blueexpress.png' alt='express' />, <img src='react-svgrepo-com.png' alt='React' />, <img src='node-js-svgrepo-com.png' alt='Node JS' />]
     },
     {
         title: 'Personal Library',
@@ -24,7 +24,7 @@ const projects = [
         desc: "A fullstack application for personal library management. In its current state it's good for sorting through different categories and updating the database when the user reads a new book, but I have so much more that I want it to do - including full CRUD on the front end, a fully remote database for ease of access, and the ability to generate suggestions for which book to read next based on user criteria. The silly little worm is the app mascot, Wilbur.",
         github: 'https://github.com/rhysrfrazier/PersonalLibrary',
         app: '',
-        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='mongodb-svgrepo-com.png' alt='MongoDB' />, <img src='bluemongoose.png' alt='Mongoose' className='mongoose'/>, <img src='blueexpress.png' alt='express' />, <img src='node-js-svgrepo-com.png' alt='Node JS' />]
+        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript' />, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='mongodb-svgrepo-com.png' alt='MongoDB' />, <img src='bluemongoose.png' alt='Mongoose' className='mongoose' />, <img src='blueexpress.png' alt='express' />, <img src='node-js-svgrepo-com.png' alt='Node JS' />]
     },
     {
         title: 'Safe Restrooms 3rd-Party API',
@@ -33,7 +33,7 @@ const projects = [
         github: 'https://github.com/rhysrfrazier/safe-restroom-3rd-party-api',
         app: 'https://gotta_go.surge.sh/',
         techs: [
-            <img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />
+            <img src='javascript-logo-svgrepo-com.png' alt='Javascript' />, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />
         ]
     }
 ]
@@ -54,12 +54,14 @@ export default function Projects() {
         <div className='projects'>
             <div className='projectsContainer'>
                 <p>Here are some of my favorite projects so far. Click for more details, and come by again later for more updates!</p>
-                {projects.map((project) => (
-                    <div className='projectLite' key={project.title} onClick={() => showDetails(project)}>
-                        <h1>{project.title}</h1>
-                        <img alt="screenshot of the app's front page" src={project.img} />
-                    </div>
-                ))}
+                <div className='grid'>
+                    {projects.map((project) => (
+                        <div className='projectLite' key={project.title} onClick={() => showDetails(project)}>
+                            <h1>{project.title}</h1>
+                            <img alt="screenshot of the app's front page" src={project.img} />
+                        </div>
+                    ))}
+                </div>
             </div>
             {selectedProject ? <ProjectDetails selectedProject={selectedProject} onClose={onClose} /> : null}
         </div>
