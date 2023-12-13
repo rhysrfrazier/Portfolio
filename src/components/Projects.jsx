@@ -50,6 +50,7 @@ export default function Projects() {
         setSelectedProject(null)
     }
 
+
     return (
         <div className='projects'>
             <div className='projectsContainer'>
@@ -58,6 +59,9 @@ export default function Projects() {
                     {projects.map((project) => (
                         <div className='projectLite' key={project.title} onClick={() => showDetails(project)}>
                             <h1>{project.title}</h1>
+                            <div className='techstack' style={{width: '70%'}}>
+                                {project.techs.map((tech) => tech)}
+                            </div>
                             <img alt="screenshot of the app's front page" src={project.img} />
                         </div>
                     ))}
