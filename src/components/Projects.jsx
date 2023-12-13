@@ -3,22 +3,12 @@ import ProjectDetails from "./ProjectDetails"
 
 const projects = [
     {
-        title: 'Safe Restrooms 3rd-Party API',
-        img: 'p1screenshot.png',
-        desc: "A 3rd-party API interface that returns addresses of public restrooms safe for use by trans/GNC folx. Results include whether the restroom is accessible by persons with disabilities, whether unisex restrooms are available, and whether baby changing stations are available. Each result card is also clickable, and brings the user to the location address in Google Maps. I spent a lot of time making sure everything worked well with a screen-reader, and while I'm pleased with how it turned out for a first project, I'm looking forward to going back and giving it a full accessibility audit.",
-        github: 'https://github.com/rhysrfrazier/safe-restroom-3rd-party-api',
-        app: 'https://gotta_go.surge.sh/',
-        techs: [
-            <img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />
-        ]
-    },
-    {
-        title: 'Personal Library',
-        img: 'worm.png',
-        desc: "A fullstack application for personal library management. In its current state it's good for sorting through different categories and updating the database when the user reads a new book, but I have so much more that I want it to do - including full CRUD on the front end, a fully remote database for ease of access, and the ability to generate suggestions for which book to read next based on user criteria. The silly little worm is the app mascot, Wilbur.",
-        github: 'https://github.com/rhysrfrazier/PersonalLibrary',
+        title: 'Pac(ker)Man',
+        img: 'p4Screen.png',
+        desc: "Pac(ker)Man is a light-weight inventory management system to help keep track of supply locations and states of repair when packing and unpacking. The current iteration allows user to pack and unpack items based on a single, user-generated event to be attended.",
+        github: 'https://github.com/rhysrfrazier/packerman',
         app: '',
-        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='mongodb-svgrepo-com.png' alt='MongoDB' />, <img src='bluemongoose.png' alt='Mongoose' className='mongoose'/>, <img src='blueexpress.png' alt='express' />, <img src='node-js-svgrepo-com.png' alt='Node JS' />]
+        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='pythonBlue.png' alt='Python3' />, <img src='djangoBlue.png' alt='Django' />, <img src='postgresBlue.png' alt='postgreSQL'/>, <img src='react-svgrepo-com.png' alt='React' />, <img src='node-js-svgrepo-com.png' alt='Node JS' /> ]
     },
     {
         title: 'Visit Seattle',
@@ -29,12 +19,22 @@ const projects = [
         techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='mongodb-svgrepo-com.png' alt='MongoDB' />, <img src='bluemongoose.png' alt='Mongoose' className='mongoose' />, <img src='blueexpress.png' alt='express' />, <img src='react-svgrepo-com.png' alt='React' />, <img src='node-js-svgrepo-com.png' alt='Node JS' /> ]
     },
     {
-        title: 'Pac(ker)Man',
-        img: 'p4Screen.png',
-        desc: "Pac(ker)Man is a light-weight inventory management system to help keep track of supply locations and states of repair when packing and unpacking. The current iteration allows user to pack and unpack items based on a single, user-generated event to be attended.",
-        github: 'https://github.com/rhysrfrazier/packerman',
+        title: 'Personal Library',
+        img: 'worm.png',
+        desc: "A fullstack application for personal library management. In its current state it's good for sorting through different categories and updating the database when the user reads a new book, but I have so much more that I want it to do - including full CRUD on the front end, a fully remote database for ease of access, and the ability to generate suggestions for which book to read next based on user criteria. The silly little worm is the app mascot, Wilbur.",
+        github: 'https://github.com/rhysrfrazier/PersonalLibrary',
         app: '',
-        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='pythonBlue.png' alt='Python3' />, <img src='djangoBlue.png' alt='Django' className='mongoose' />, <img src='react-svgrepo-com.png' alt='React' />, <img src='node-js-svgrepo-com.png' alt='Node JS' /> ]
+        techs: [<img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />, <img src='mongodb-svgrepo-com.png' alt='MongoDB' />, <img src='bluemongoose.png' alt='Mongoose' className='mongoose'/>, <img src='blueexpress.png' alt='express' />, <img src='node-js-svgrepo-com.png' alt='Node JS' />]
+    },
+    {
+        title: 'Safe Restrooms 3rd-Party API',
+        img: 'p1screenshot.png',
+        desc: "A 3rd-party API interface that returns addresses of public restrooms safe for use by trans/GNC folx. Results include whether the restroom is accessible by persons with disabilities, whether unisex restrooms are available, and whether baby changing stations are available. Each result card is also clickable, and brings the user to the location address in Google Maps. I spent a lot of time making sure everything worked well with a screen-reader, and while I'm pleased with how it turned out for a first project, I'm looking forward to going back and giving it a full accessibility audit.",
+        github: 'https://github.com/rhysrfrazier/safe-restroom-3rd-party-api',
+        app: 'https://gotta_go.surge.sh/',
+        techs: [
+            <img src='javascript-logo-svgrepo-com.png' alt='Javascript'/>, <img src='html5-01-svgrepo-com.png' alt='HTML5' />, <img src='css3-02-svgrepo-com.png' alt='CSS3' />
+        ]
     }
 ]
 
