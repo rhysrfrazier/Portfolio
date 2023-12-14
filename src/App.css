@@ -162,6 +162,44 @@ i {
 
 /* projects */
 
+.tooltip {
+  position: relative;
+  display: inline;
+  /* border-bottom: dotted #4f7cac; */
+}
+
+.tooltip .tipText {
+  visibility: hidden;
+  background-color: #c0e0deb1;
+  color: #162521;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+
+  position: absolute;
+  z-index: 500;
+
+  width: 100px;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -55px;
+}
+
+.tooltip:hover .tipText {
+  visibility: visible
+}
+
+.tooltip .tipText::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left:-5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #c0e0deb1 transparent transparent transparent;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -227,7 +265,7 @@ i {
 }
 
 .projectLite img {
-  max-height: 300px;
+  max-height: 250px;
   border-radius: 3px;
 }
 
@@ -308,7 +346,7 @@ i {
 }
 
 .mongoose {
-  min-height: 40px;
+  min-width: 40px;
 }
 
 .projectLinks {
