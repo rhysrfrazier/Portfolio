@@ -70,7 +70,7 @@ p {
 
 .footerContact p {
   padding: 0 2vw 0 2vw;
-  margin: 0;
+  margin: 3px;
   color: #4f7cac;
 }
 
@@ -165,7 +165,6 @@ i {
 .tooltip {
   position: relative;
   display: inline;
-  /* border-bottom: dotted #4f7cac; */
 }
 
 .tooltip .tipText {

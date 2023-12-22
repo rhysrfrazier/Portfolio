@@ -17,6 +17,7 @@ export default function Footer() {
             <div className='footerContact'>
                 <p className='footerName'>Rhys Frazier</p>
                 <p>Frederick, MD USA</p>
+                <p><a href='mailto:rhysrfrazier@gmail.com' target='_blank' className='tempLink'>rhysrfrazier@gmail.com</a></p>
             </div>
         </div>
     )
