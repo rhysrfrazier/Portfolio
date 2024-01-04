@@ -22,6 +22,9 @@ export default function Nav() {
                 <Link to='/' >
                     <h2 className={makeActive('/')}>About</h2>
                 </Link>
+                <Link to='/resume'>
+                    <h2 className={makeActive('/resume')}>Skills and Experience</h2>
+                </Link>
                 <Link to='/projects' >
                     <h2 className={makeActive('/projects')}>Projects</h2>
                 </Link>

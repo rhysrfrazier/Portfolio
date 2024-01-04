@@ -34,7 +34,7 @@ p {
   height: 90px;
 
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 
   background-color: #162521;
 
@@ -50,14 +50,14 @@ p {
 }
 
 .navName h1 {
-  color:#4f7cac;
+  color: #4f7cac;
   margin: 0;
   font-size: 29px;
   font-weight: 600;
 }
 
 .navSubtitle {
-  color:#4f7cac;
+  color: #4f7cac;
   margin: 0;
   font-size: 18px;
 }
@@ -206,9 +206,57 @@ i {
   left: 47%;
 }
 
-.techIcon {
+
+
+/* resume */
+
+.resumeContainer {
+  width: 100%;
+  margin-top: 80px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resumeLeft {
+  max-width: 30%;
+
+  margin: 100px 0 100px 0;
+}
+
+.blurb {
+  color:#c0e0de;
+  font-weight: 300;
+}
+
+.xpIcon {
   max-width: 30px;
 }
+
+.aboutTechBlock p {
+  color:#c0e0de
+}
+
+.resumeDownload {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumePDF {
+  color:#9eefe5;
+}
+
+.downloadBlurb {
+  color:#c0e0de;
+  font-weight: 400;
+  padding-top: 2rem;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 
 /* projects */
 
