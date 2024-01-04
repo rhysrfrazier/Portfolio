@@ -25,7 +25,7 @@ export default function About() {
                             <img className='techIcon' src='html5-01-svgrepo-com.png' aria-hidden='true'></img>
                         </div>
                     </div> */}
-                    <p>The site is made with HTML5, CSS3, and JS in a React framework.</p>
+                    {/* <p>The site is made with HTML5, CSS3, and JS in a React framework.</p> */}
                 </div>
             </div>
         </div>
