@@ -8,6 +8,8 @@ body {
   padding: 0;
 
   position: relative;
+
+  overflow-x: hidden;
 }
 
 p {
@@ -86,6 +88,11 @@ i {
   padding: 0 2vw 0 2vw;
 }
 
+.resume {
+  max-height: 35px;
+  padding: 0 2vw 0 2vw;
+}
+
 /* about */
 
 .aboutSection {
@@ -100,6 +107,7 @@ i {
   margin-bottom: 3rem;
   margin-right: 3rem;
   width: 50%;
+  max-height: 70vh;
   display: flex;
   justify-content: center;
 }
@@ -113,7 +121,10 @@ i {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-self: flex-start;
+
+  max-height: 65vh;
+  overflow-y: hidden;
 }
 
 .heyThere h1 {
@@ -162,6 +173,10 @@ i {
   left: 47%;
 }
 
+.techIcon {
+  max-width: 30px;
+}
+
 /* projects */
 
 .tooltip {
@@ -195,7 +210,7 @@ i {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left:-5px;
+  margin-left: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: #c0e0deb1 transparent transparent transparent;
@@ -220,14 +235,21 @@ i {
 .projectsContainer {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
 
   min-width: 100%;
 
-  margin: 8vh 0 10vh 0;
+  margin: 50px 0 10vh 0;
+}
+
+.projectsContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .projectsContainer p {
+  margin-top: 80px;
   width: 60vw;
   text-align: center;
   line-height: 2rem;
@@ -239,7 +261,7 @@ i {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1250px) {
   .grid {
     display: flex;
     flex-direction: column;
@@ -574,7 +596,7 @@ textarea {
   }
 
   .detailimg {
-   display: none
+    display: none
   }
 
 }

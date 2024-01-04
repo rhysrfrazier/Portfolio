@@ -12,6 +12,12 @@ export default function Footer() {
                         <span className='fa-sr-only'>Rhys' LinkedIn Link</span>
                     </i>
                 </a>
+                <div className='tooltip'>
+                    <a href='Rhys_Frazier_Resume.pdf' download='Rhys_Frazier_Full_CV'>
+                        <img src='icons8-resume-100.png' alt='resume' className='resume' />
+                    </a>
+                    <span className='tipText'>Download Full Resume</span>
+                </div>
             </div>
 
             <div className='footerContact'>
