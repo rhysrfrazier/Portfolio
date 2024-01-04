@@ -23,12 +23,6 @@ p {
   display: flex;
 }
 
-.routesContainer::-webkit-scrollbar {
-  display: none;
-  width:0;
-  height: 0;
-}
-
 .navbar {
   position: absolute;
   top: 0;
@@ -498,8 +492,14 @@ textarea {
   .aboutSection {
     flex-direction: column;
     justify-content: flex-start;
-    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
     overflow-x: hidden;
+  }
+
+  .aboutSection::-webkit-scrollbar {
+    display: none;
   }
 
   .pictures {
@@ -538,6 +538,16 @@ textarea {
   }
 
   /*Projects */
+
+  .projectsContainer {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+  }
+
+  .projectsContainer::-webkit-scrollbar {
+    display: none;
+  }
 
   .projectLite {
     width: 80vw;
