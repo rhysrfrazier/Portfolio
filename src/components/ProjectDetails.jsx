@@ -17,8 +17,9 @@ export default function ProjectDetails({ onClose, selectedProject }) {
                         )}
                     </div>
                     <div className='projectLinks'>
-                        <a href={selectedProject.github} target='_blank'>Github</a>
+                        <a href={selectedProject.github} target='_blank'>GitHub</a>
                         {selectedProject.app !== '' ? <a href={selectedProject.app} target='_blank'>App</a> : null}
+                        {selectedProject.demo !== '' ? <a href={selectedProject.demo} target='_blank'>Demo</a> : null}
                     </div>
                 </div>
                 <div className='right'>

@@ -20,8 +20,8 @@ export default function Contact() {
 
     return (
         <div className='contactContainer'>
-            <h1>Send Me a Message - Coming Soon!</h1>
-            <p>The contact form isn't complete quite yet, but in the meantime, find me on <a href='https://www.linkedin.com/in/rhysrfrazier/' target='_blank' className='tempLink'>LinkedIn</a> or <a href='mailto:rhysrfrazier@gmail.com' target='_blank' className='tempLink'>email me</a>.</p>
+            <h1>Don't be a Stranger!</h1>
+            <p>Find me on  <a href='https://www.linkedin.com/in/rhysrfrazier/' target='_blank' className='tempLink'>LinkedIn</a> or <a href='https://github.com/rhysrfrazier' target='_blank' className='tempLink'>GitHub</a> -- or <a href='mailto:rhysrfrazier@gmail.com' target='_blank' className='tempLink'>email me</a> directly.</p>
             {/* <form className='contactForm' onSubmit={handleSubmit}>
                 <div className='nameEmail'>
                     <label className='name'>
