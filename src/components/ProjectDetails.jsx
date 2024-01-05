@@ -1,6 +1,5 @@
 export default function ProjectDetails({ onClose, selectedProject }) {
 
-    console.log(selectedProject.title)
     return (
         <div className='details'>
             <div className='detailModal'>
