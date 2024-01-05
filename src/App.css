@@ -10,6 +10,13 @@ body {
   position: relative;
 
   overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 p {
@@ -19,14 +26,22 @@ p {
 
 .routesContainer {
   overflow: none;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 
   display: flex;
 }
 
+.navBurger {
+  display: none;
+}
+
+.burgerMenu {
+  display: none;
+}
+
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -86,7 +101,7 @@ p {
 
 /* footer */
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
@@ -94,7 +109,7 @@ p {
   display: flex;
   justify-content: space-between;
 
-  min-height: 10vh;
+  height: 110px;
   background-color: #162521;
 }
 
@@ -211,10 +226,18 @@ i {
 /* resume */
 
 .resumeContainer {
+  height: 100%;
   width: 100%;
   margin-top: 80px;
+  margin-bottom: 80px;
 
-  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+.resumeContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .resumeLeft {
@@ -351,7 +374,7 @@ i {
 
   min-width: 100%;
 
-  margin: 50px 0 10vh 0;
+  margin: 50px 0 100px 0;
 }
 
 .projectsContainer::-webkit-scrollbar {
@@ -371,13 +394,6 @@ i {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 1250px) {
-  .grid {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .projectLite {
   border: 4px solid #9eefe5;
   border-radius: 10px;
@@ -393,7 +409,7 @@ i {
 
   width: 600px;
 
-  margin: 2rem 0 2rem 0;
+  margin: 3rem;
   padding-bottom: 2rem;
 }
 
@@ -594,11 +610,77 @@ textarea {
 
 /* smaller screens */
 
+@media screen and (max-width: 1450px) {
+  .xpStack {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 2.5rem;
+    justify-items: space-around;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1300px) {
+
+  .navBurger {
+    display: inline;
+    border: none;
+    background-color: #162521;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navName {
+    width: 70%;
+  }
+
+  .burgerMenu {
+    z-index: 10;
+    position: fixed;
+    top: 90px;
+    bottom: 350px;
+    right: 0;
+
+    background-color: #162521;
+    border-left: 2px solid #4f7cac;
+    border-bottom: 2px solid #4f7cac;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .burgerMenu a {
+    text-align: center;
+    width: 100%;
+  }
+
+  .burgerMenu h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
   .detailModal {
     flex-direction: column;
-    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
     height: 70vh;
+  }
+
+  .detailModal::-webkit-scrollbar {
+    display: none;
   }
 
   .projectLinks {
@@ -613,11 +695,60 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1130px) {
+
+  .xpStack {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 2.5rem;
+    justify-items: space-around;
+    justify-items: center;
+  }
+
+}
+
 /* mobile and tablet*/
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
 
-  /* change the nav bar and footer */
+  /* nav bar and footer */
+  .navSubtitle {
+    display: none;
+  }
+
+  .navName {
+    padding-left: 5px;
+  }
+
+  .burgerMenu {
+    z-index: 10;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    bottom: 0;
+
+    background-color: #162521;
+    border: none;
+    border-radius: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .burgerMenu a {
+    text-align: center;
+    width: 100%;
+  }
+
+  .burgerMenu h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .footer {
+    display: none;
+  }
 
   /* About */
 
@@ -639,7 +770,7 @@ textarea {
     height: auto;
     position: static;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 7rem;
     margin-bottom: 1rem;
   }
 
@@ -665,13 +796,36 @@ textarea {
   .heyContainer {
     margin: 0 auto;
     margin-top: 1rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     width: 100vw;
+  }
+
+  /* resume */
+
+  .resumeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 0;
+  }
+
+  .resumeLeft {
+    min-width: 75%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .resumeDownload {
+    position: static;
+    margin: 4rem 0 4rem 0;
   }
 
   /*Projects */
 
   .projectsContainer {
+    margin-bottom: 0;
+
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
@@ -709,4 +863,18 @@ textarea {
     display: none
   }
 
+  /*Contact*/
+
+  .contactContainer {
+    text-align: center;
+    margin-top: 40%;
+  }
+
+  .contactContainer h1 {
+    font-size: 40px;
+  }
+
+  .contactContainer p {
+    font-size: 35px;
+  }
 }
