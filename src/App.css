@@ -214,31 +214,60 @@ i {
   width: 100%;
   margin-top: 80px;
 
-  display: flex;
-  justify-content: space-evenly;
+  overflow: auto;
 }
 
 .resumeLeft {
   max-width: 30%;
 
-  margin: 100px 0 100px 0;
+  margin: 60px 0 100px 0;
+  padding: 0 15% 0 15%;
 }
 
 .blurb {
-  color:#c0e0de;
+  color: #c0e0de;
   font-weight: 300;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.xpStack {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 2.5rem;
+  justify-items: space-around;
+  justify-items: center;
 }
 
 .xpIcon {
-  max-width: 30px;
+  width: 35px;
 }
 
-.aboutTechBlock p {
-  color:#c0e0de
+.xpTechBlock {
+  background-color: #162521;
+  border-radius: 5px;
+  width: 85px;
+  height: 85px;
+  padding: 6px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.xpTechBlock p {
+  color: #c0e0de;
+  font-size: 16px;
+  margin: 0;
 }
 
 .resumeDownload {
-  margin-top: -40px;
+  position: fixed;
+  top: 35%;
+  right: 20%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,11 +275,11 @@ i {
 }
 
 .resumePDF {
-  color:#9eefe5;
+  color: #9eefe5;
 }
 
 .downloadBlurb {
-  color:#c0e0de;
+  color: #c0e0de;
   font-weight: 400;
   padding-top: 2rem;
   font-size: 20px;
