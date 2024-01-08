@@ -8,7 +8,7 @@ const projects = [
         desc: "Pac(ker)Man is a light-weight inventory management system to help keep track of supply locations and states of repair through database SQL manipulation when packing and unpacking. The current iteration allows user to pack and unpack items based on a single, user-generated event to be attended.",
         github: 'https://github.com/rhysrfrazier/packerman',
         app: '',
-        demo: '',
+        demo: 'https://drive.google.com/file/d/1URXGJqfsa5ETjuN_e1XLM0NLBSkp2U7E/view?usp=sharing',
         techs: [
             <div className='tooltip'>
                 <img src='javascript-logo-svgrepo-com.png' alt='Javascript' />
