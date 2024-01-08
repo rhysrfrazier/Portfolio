@@ -13,14 +13,7 @@ body {
   position: relative;
 
   overflow-x: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: hidden;
 }
-
-/* body::-webkit-scrollbar {
-  display: none;
-} */
 
 p {
   font-size: 20px;
@@ -239,31 +232,12 @@ i {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: hidden;
-
-  border: 4px solid green;
 }
 
-.resumeContainer::-webkit-scrollbar {
-  display: none;
-}
 
 .resumeLeft {
-  max-width: 30%;
+  max-width: 35%;
   padding-bottom: 40px;
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: scroll;
-
-  border: 1px solid blue;
-}
-
-.resumeLeft::-webkit-scrollbar {
-  display: none;
 }
 
 .blurb {
@@ -280,6 +254,7 @@ i {
   grid-row-gap: 2.5rem;
   justify-items: space-around;
   justify-items: center;
+  padding-bottom: 150px;
 }
 
 .xpIcon {
@@ -306,12 +281,6 @@ i {
 }
 
 .resumeDownload {
-  /* position: fixed;
-  top: 35%;
-  right: 20%; */
-
-  border: 1px solid rebeccapurple;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -371,21 +340,12 @@ i {
 }
 
 .projects {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-width: 100%;
   color: #c0e0de;
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: scroll;
-}
-
-.projects::-webkit-scrollbar {
-  display: none;
 }
 
 .projects p {
@@ -401,9 +361,15 @@ i {
   min-width: 100%;
 
   margin: 50px 0 100px 0;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
 }
 
-
+.projectsContainer::-webkit-scrollbar {
+  display: none;
+}
 
 .projectsContainer p {
   margin-top: 80px;
@@ -550,6 +516,7 @@ i {
 
 .contactContainer {
   margin: auto;
+  margin-top: 30vh;
   border-radius: 7px;
 
 
@@ -635,12 +602,8 @@ textarea {
 /* smaller screens */
 
 @media screen and (max-width: 1450px) {
-  .xpStack {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-row-gap: 2.5rem;
-    justify-items: space-around;
-    justify-items: center;
+  .resumeLeft {
+    max-width: 40%;
   }
 }
 
@@ -671,7 +634,6 @@ textarea {
     z-index: 10;
     position: fixed;
     top: 90px;
-    bottom: 350px;
     right: 0;
 
     background-color: #162521;
@@ -721,9 +683,29 @@ textarea {
 
 @media screen and (max-width: 1130px) {
 
+  .resumeContainer { 
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .resumeDownload {
+    padding: 3rem 0 2rem 0;
+  }
+
+  .resumeLeft {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blurb {
+    margin: 1rem 4rem 3rem 4rem;
+  }
+
   .xpStack {
-    display: grid;
-    grid-template-columns: auto auto;
+    padding-bottom: 150px;
+    width: 70vw;
   }
 
 }
@@ -821,39 +803,11 @@ textarea {
     width: 100vw;
   }
 
-  /* resume */
+  /* Resume */
 
-  .resumeContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 4px solid orange;
-    min-height: 100vh;
-    /* margin-bottom: 0; */
-
-
-    /* -ms-overflow-style: none;
-    scrollbar-width: none; */
-    overflow-y: scroll;
-    /* min-height: 150vh; */
-  }
-
-  .resumeLeft {
-    /* min-width: 75%; */
-    /* margin: 0 auto; */
-    /* padding: 0; */
-    height: 2000px !important;
-    max-width: 95%;
-    /* overflow-y:hidden; */
-    padding-bottom: 0;
-
-    border: 1px solid blue;
-  }
-
-  .resumeDownload {
-    margin: 2rem 0;
-    border: 1px solid rebeccapurple;
-    width: 100%;
+  .xpStack {
+    grid-template-columns: auto auto;
+    padding-bottom: 50px;
   }
 
   /*Projects */

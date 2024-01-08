@@ -66,6 +66,7 @@ export default function Resume() {
                 </div>
                
             </div>
+            
             <div className='resumeDownload'>
                 <a href='Rhys_Frazier_Resume.pdf' download='Rhys_Frazier_Full_CV'>
                     <i className="fa-solid fa-file-pdf fa-10x resumePDF" aria-hidden='true'>
