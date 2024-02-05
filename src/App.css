@@ -348,6 +348,14 @@ i {
   color: #c0e0de;
 }
 
+.allProjH1 {
+  font-weight: 500;
+  width: 60%;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 10rem;
+}
+
 .projects p {
   font-weight: 400;
   font-size: 22px;
@@ -365,23 +373,6 @@ i {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: scroll;
-}
-
-.projectsContainer::-webkit-scrollbar {
-  display: none;
-}
-
-.projectsContainer p {
-  margin-top: 80px;
-  width: 60vw;
-  text-align: center;
-  line-height: 2rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-around;
 }
 
 .projectLite {
@@ -403,72 +394,37 @@ i {
   padding-bottom: 2rem;
 }
 
-.projectLite img {
-  max-height: 250px;
-  border-radius: 3px;
-}
-
-.projectLite h1 {
-  font-weight: 400;
-}
-
 /* project details */
 
-.details {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #000000a5;
-  z-index: 99;
-
+.projectTiles {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
-.detailModal {
-  margin: 0 auto;
+.projectDetails {
+  background:rgb(3, 0, 23);
+  margin: 5rem 0 5rem 0;
   border-radius: 10px;
-  background-color: rgb(3, 0, 23);
-
-  height: 80vh;
-  width: 80vw;
-  z-index: 100;
-  position: relative;
-
+  width: 60%;
+  padding: 5rem;
   display: flex;
   align-items: center;
-
-  font-size: 18px;
-}
-
-.close {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-
-  position: absolute;
-  top: 2rem;
-  right: 0rem;
-
-  cursor: pointer;
-}
-
-.close i {
-  color: #9eefe5;
 }
 
 .left {
-  margin: 5rem;
-
+  margin-right: 5rem;
   display: flex;
   flex-direction: column;
 }
 
-.left h1 {
+.left h2 {
+  align-self: center;
+  text-decoration: underline;
+}
+
+.left p {
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .techstack {
@@ -605,12 +561,13 @@ textarea {
   .resumeLeft {
     max-width: 40%;
   }
-}
 
-@media screen and (max-width: 1320px) {
-  .grid {
-    display: flex;
+  .projectDetails {
     flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0;
   }
 }
 
@@ -656,19 +613,6 @@ textarea {
     font-size: 24px;
   }
 
-  .detailModal {
-    flex-direction: column;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 70vh;
-  }
-
-  .detailModal::-webkit-scrollbar {
-    display: none;
-  }
-
   .projectLinks {
     min-width: 70%;
     align-self: center;
@@ -677,7 +621,7 @@ textarea {
   }
 
   .detailimg {
-    margin-top: 0;
+    margin-top: 5rem;
   }
 }
 

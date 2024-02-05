@@ -1,5 +1,4 @@
 import { useState } from "react"
-import ProjectDetails from "./ProjectDetails"
 
 const projects = [
     {
@@ -89,7 +88,7 @@ const projects = [
     {
         title: 'Personal Library Manager',
         img: 'p2screenshot.png',
-        desc: "A fullstack application for personal library management. In its current state it's good for sorting through different categories and updating the database when the user reads a new book.", 
+        desc: "A fullstack application for personal library management. In its current state it's good for sorting through different categories and updating the database when the user reads a new book.",
         github: 'https://github.com/rhysrfrazier/PersonalLibrary',
         app: '',
         demo: 'https://drive.google.com/file/d/1OgI3lM5diENGOzimUn5YB2AlpK0UrBeu/view?usp=sharing',
@@ -152,10 +151,6 @@ export default function Projects() {
 
     const [selectedProject, setSelectedProject] = useState(null)
 
-    function showDetails(project) {
-        setSelectedProject(project)
-    }
-
     function onClose() {
         setSelectedProject(null)
     }
@@ -164,20 +159,31 @@ export default function Projects() {
     return (
         <div className='projects'>
             <div className='projectsContainer'>
-                <p>Here are some of my favorite projects so far. Click for more details, and come by again later for more updates!</p>
-                <div className='grid'>
+                <h1 className='allProjH1'>Check out some of my demo projects and works in progress:</h1>
+                <div className='projectTiles'>
                     {projects.map((project) => (
-                        <div className='projectLite' key={project.title} onClick={() => showDetails(project)}>
-                            <h1>{project.title}</h1>
-                            <div className='techstack' style={{ width: '70%' }}>
-                                {project.techs.map((tech) => tech)}
+                        <div className='projectDetails' key={project.title} >
+                            <div className='left'>
+                                <h2>{project.title}</h2>
+                                <p>{project.desc}</p>
+                                <div className='techstack' >
+                                    {project.techs.map((tech) =>
+                                        (tech)
+                                    )}
+                                </div>
+                                <div className='projectLinks'>
+                                    <a href={project.github} target='_blank'>GitHub</a>
+                                    {project.app !== '' ? <a href={project.app} target='_blank'>App</a> : null}
+                                    {project.demo !== '' ? <a href={project.demo} target='_blank'>Demo</a> : null}
+                                </div>
                             </div>
-                            <img alt="screenshot of the app's front page" src={project.img} />
+                            <div className='right'>
+                                <img className='detailimg' src={project.img} alt='screenshot of app homepage' />
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
-            {selectedProject ? <ProjectDetails selectedProject={selectedProject} onClose={onClose} /> : null}
         </div>
     )
 }
