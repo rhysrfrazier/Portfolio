@@ -9,7 +9,7 @@ export default function Contact() {
     const [nope, setNope] = useState('')
 
     const handleSubmit = (e) => {
-        if(nope !== ''){
+        if (nope !== '') {
             console.error('bot')
         }
         e.preventDefault()
@@ -20,47 +20,49 @@ export default function Contact() {
 
     return (
         <div className='contactContainer'>
-            <h1>Don't be a Stranger!</h1>
-            <p>Find me on  <a href='https://www.linkedin.com/in/rhysrfrazier/' target='_blank' className='tempLink'>LinkedIn</a> or <a href='https://github.com/rhysrfrazier' target='_blank' className='tempLink'>GitHub</a> -- or <a href='mailto:rhysrfrazier@gmail.com' target='_blank' className='tempLink'>email me</a> directly.</p>
-            {/* <form className='contactForm' onSubmit={handleSubmit}>
-                <div className='nameEmail'>
-                    <label className='name'>
-                        <span className='labelText'>Your name:</span>
-                        <input name='name' id='name' value={name} onChange={e => setName(e.target.value)} />
-                    </label>
-                    <label className='email'>
-                        <span className='labelText'>Your email:</span>
-                        <input name='email' id='email' value={email} onChange={e => setEmail(e.target.value)} />
-                    </label>
-                </div>
-                <br />
-                <label>
-                    <span className='labelText'>Subject:</span>
+            <div className='contactBox'>
+                <h1>Don't be a Stranger!</h1>
+                {/* <p>Find me on  <a href='https://www.linkedin.com/in/rhysrfrazier/' target='_blank' className='tempLink'>LinkedIn</a> or <a href='https://github.com/rhysrfrazier' target='_blank' className='tempLink'>GitHub</a> -- or <a href='mailto:rhysrfrazier@gmail.com' target='_blank' className='tempLink'>email me</a> directly.</p> */}
+                <form className='contactForm' onSubmit={handleSubmit}>
+                    <div className='nameEmail'>
+                        <label className='name'>
+                            <span className='labelText'>Your name:</span>
+                            <input className='nameInput' name='name' id='name' value={name} onChange={e => setName(e.target.value)} />
+                        </label>
+                        <label className='email'>
+                            <span className='labelText'>Your email:</span>
+                            <input className='emailInput' name='email' id='email' value={email} onChange={e => setEmail(e.target.value)} />
+                        </label>
+                    </div>
                     <br />
-                    <input name='subject' className='subject' id='subject' value={subject} onChange={e => setSubject(e.target.value)} />
-                </label>
-                <br />
-                <label>
-                    <span className='labelText'>Type your message here:</span>
+                    <label>
+                        <span className='labelText'>Subject:</span>
+                        <br />
+                        <input name='subject' className='subject' id='subject' value={subject} onChange={e => setSubject(e.target.value)} />
+                    </label>
                     <br />
-                    <textarea
-                        name='message'
-                        rows={4}
-                        cols={50}
-                        id='message'
-                        value={message}
-                        onChange={e => setMessage(e.target.value)}
-                    />
-                </label>
-                <input type='hidden' name='nope' value={nope} onChange={e => setNope(e.target.value)} />
-                <br />
-                <div className='sendMessageContainer'>
-                    <button type='submit'
-                    className='sendMessage'
-                    onClick={handleSubmit}
-                    >Send</button>
-                </div>
-            </form> */}
+                    <label>
+                        <span className='labelText'>Type your message here:</span>
+                        <br />
+                        <textarea
+                            name='message'
+                            rows={4}
+                            cols={50}
+                            id='message'
+                            value={message}
+                            onChange={e => setMessage(e.target.value)}
+                        />
+                    </label>
+                    <input type='hidden' name='nope' value={nope} onChange={e => setNope(e.target.value)} />
+                    <br />
+                    <div className='sendMessageContainer'>
+                        <button type='submit'
+                            className='sendMessage'
+                            onClick={handleSubmit}
+                        >Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }

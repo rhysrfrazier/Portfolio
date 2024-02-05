@@ -8,7 +8,7 @@ body {
   letter-spacing: .6px;
   margin: 0 auto;
   padding: 0;
-  
+
 
   position: relative;
 
@@ -24,7 +24,7 @@ p {
   /* overflow: none; */
   height: 100%;
   width: 100vw;
-  
+
   display: flex;
 }
 
@@ -403,7 +403,7 @@ i {
 }
 
 .projectDetails {
-  background:rgb(3, 0, 23);
+  background: rgb(3, 0, 23);
   margin: 5rem 0 5rem 0;
   border-radius: 10px;
   width: 60%;
@@ -471,8 +471,11 @@ i {
 /* contact */
 
 .contactContainer {
+  padding-bottom: 10rem;
+}
+
+.contactBox {
   margin: auto;
-  margin-top: 30vh;
   border-radius: 7px;
 
 
@@ -485,6 +488,7 @@ i {
   border: 2px solid #9eefe5;
 
   padding: 3rem;
+  margin: 5rem 10rem 5rem 10rem;
 }
 
 .tempLink {
@@ -504,6 +508,11 @@ i {
   flex-direction: column;
 
   min-width: 230px;
+}
+
+.nameInput,
+.emailInput {
+  width: 33vw;
 }
 
 .labelText {
@@ -569,6 +578,19 @@ textarea {
   .left {
     margin-right: 0;
   }
+
+  .nameEmail {
+    flex-direction: column;
+  }
+
+  .nameInput,
+  .emailInput {
+    width: 99%;
+  }
+
+  .email {
+    margin-top: 15px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -627,7 +649,7 @@ textarea {
 
 @media screen and (max-width: 1130px) {
 
-  .resumeContainer { 
+  .resumeContainer {
     flex-direction: column-reverse;
     justify-content: flex-end;
   }
@@ -700,6 +722,7 @@ textarea {
   /* About */
 
   .aboutSection {
+    margin-right: 0;
     flex-direction: column;
     justify-content: flex-start;
     -ms-overflow-style: none;
@@ -801,6 +824,8 @@ textarea {
   .contactContainer {
     text-align: center;
     margin-top: 40%;
+    margin: 0 auto;
+    border: 1px solid red;
   }
 
   .contactContainer h1 {
@@ -809,5 +834,9 @@ textarea {
 
   .contactContainer p {
     font-size: 35px;
+  }
+
+  .contactBox {
+    margin: 0 auto;
   }
 }
