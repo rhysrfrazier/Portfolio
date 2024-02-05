@@ -14,12 +14,10 @@ function App() {
     <div className='app'>
       <Nav />
       <About />
-      {/* need to redo the skills and resume section because it gets in the way of the about as it is */}
-      {/* need to redo the formatting of projects - full thing without modals because fuck me ig */}
+      {/* <Resume />
       <Projects />
       <Contact />
-      <Footer />
-
+      <Footer /> */}
     </div>
   )
 }

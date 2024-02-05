@@ -1,4 +1,89 @@
-/* Nav and body and universal */
+/* Universal */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #0e091c;
+
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .6px;
+
+  color: #e8d44d;
+}
+
+body a {
+  color: #e4deba;
+  text-decoration: none;
+}
+
+/* Nav */
+
+.navbar {
+  position: fixed;
+  height: 90px;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background: #1c1239;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.RFlogo {
+  max-width: 50px;
+  margin: 15px;
+}
+
+/* hide the links that aren't in the burger until the screen is bigger */
+
+.navLinks {
+  display: none;
+}
+
+a {
+  border-bottom: 1px solid #71a9f7;
+  width: 90%;
+  text-align: center;
+}
+
+/* burger style */
+
+.navBurger {
+  background-color: #1c1239;
+  border: none;
+  color: #e8d44d;
+  margin: 15px;
+}
+
+.burgerMenu {
+  position: fixed;
+  top: 90px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.burgerMenu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.lastBurgerLink {
+  border-bottom: 0
+}
+
+/* Nav and body and universal
 
 body {
   height: 100vh;
@@ -8,11 +93,6 @@ body {
   letter-spacing: .6px;
   margin: 0 auto;
   padding: 0;
-
-
-  position: relative;
-
-  overflow-x: hidden;
 }
 
 p {
@@ -21,7 +101,7 @@ p {
 }
 
 .routesContainer {
-  /* overflow: none; */
+  /* overflow: none; 
   height: 100%;
   width: 100vw;
 
@@ -95,7 +175,7 @@ p {
 }
 
 
-/* footer */
+/* footer 
 .footer {
   position: fixed;
   bottom: 0;
@@ -136,7 +216,7 @@ i {
   padding: 0 2vw 0 2vw;
 }
 
-/* about */
+/* about 
 
 .aboutSection {
   height: 100vh;
@@ -221,7 +301,7 @@ i {
 
 
 
-/* resume */
+/* resume 
 
 .resumeContainer {
   position: absolute;
@@ -300,7 +380,7 @@ i {
 }
 
 
-/* projects */
+/* projects 
 
 .tooltip {
   position: relative;
@@ -394,7 +474,7 @@ i {
   padding-bottom: 2rem;
 }
 
-/* project details */
+/* project details 
 
 .projectTiles {
   display: flex;
@@ -468,7 +548,7 @@ i {
 }
 
 
-/* contact */
+/* contact 
 
 .contactContainer {
   padding-bottom: 10rem;
@@ -564,7 +644,7 @@ textarea {
   color: rgb(3, 0, 23);
 }
 
-/* smaller screens */
+/* smaller screens 
 
 @media screen and (max-width: 1450px) {
   .resumeLeft {
@@ -676,11 +756,11 @@ textarea {
 
 }
 
-/* mobile and tablet*/
+/* mobile and tablet
 
 @media screen and (max-width: 800px) {
 
-  /* nav bar and footer */
+  /* nav bar and footer 
   .navSubtitle {
     display: none;
   }
@@ -719,7 +799,7 @@ textarea {
     display: none;
   }
 
-  /* About */
+  /* About 
 
   .aboutSection {
     margin-right: 0;
@@ -770,14 +850,14 @@ textarea {
     width: 100vw;
   }
 
-  /* Resume */
+  /* Resume 
 
   .xpStack {
     grid-template-columns: auto auto;
     padding-bottom: 50px;
   }
 
-  /*Projects */
+  /*Projects 
 
   .projectsContainer {
     margin-bottom: 0;
@@ -819,7 +899,7 @@ textarea {
     display: none
   }
 
-  /*Contact*/
+  /*Contact
 
   .contactContainer {
     text-align: center;
@@ -839,4 +919,4 @@ textarea {
   .contactBox {
     margin: 0 auto;
   }
-}
+} */

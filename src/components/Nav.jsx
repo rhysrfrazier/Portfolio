@@ -25,8 +25,7 @@ export default function Nav() {
     return (
         <div className='navbar'>
             <div className='navName'>
-                <h1>Rhys Frazier</h1>
-                <h2 className='navSubtitle'>Junior Software Engineer</h2>
+                <img className='RFlogo' src='RF.png' alt='RF initials in the style of the JavaScript logo'/>
             </div>
             <div className='navLinks'>
                 <Link to='/' >
@@ -38,7 +37,7 @@ export default function Nav() {
                 <Link to='/projects' >
                     <h2 className={makeActive('/projects')}>Projects</h2>
                 </Link>
-                <Link to='/contact' >
+                <Link to='/contact'>
                     <h2 className={makeActive('/contact')}>Get in Touch</h2>
                 </Link>
             </div>
@@ -69,7 +68,7 @@ export default function Nav() {
                 <Link to='mailto:rhysrfrazier@gmail.com' target='_blank' onClick={revealMenu}>
                     <h2>Email Me</h2>
                 </Link>
-                <Link to='Rhys_Frazier_Resume.pdf' target='_blank' download onClick={revealMenu}>
+                <Link className='lastBurgerLink' to='Rhys_Frazier_Resume.pdf' target='_blank' download onClick={revealMenu}>
                     <h2>Download My Resume</h2>
                 </Link>
             </div> : null}
