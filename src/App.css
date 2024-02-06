@@ -1,13 +1,12 @@
 /* Universal */
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   background-color: #0e091c;
 
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: .6px;
+  font-family: 'Fira Code', monospace;
 
   color: #e8d44d;
 }
@@ -24,6 +23,11 @@ body h1 {
 body a {
   color: #e4deba;
   text-decoration: none;
+}
+
+.app {
+  position: relative;
+  /* border: 1px solid red; */
 }
 
 /* Nav */
@@ -80,7 +84,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
 
-  background-color:#1c1239
+  background-color: #1c1239
 }
 
 .burgerMenu a {
@@ -98,7 +102,8 @@ a {
 
 .aboutSection {
   background-color: #0e091c;
-  margin: 120px 0 120px 0;
+  margin: 0 0 100px 0;
+  padding-top: 120px;
 }
 
 .insidePics {
@@ -144,12 +149,10 @@ a {
 }
 
 .likes {
-  /* border: 1px solid red; */
   padding: 0 20px 0 25px;
 }
 
 .dislikes {
-  /* border: 1px solid red; */
   padding: 0 0 0 50px;
 }
 
@@ -161,15 +164,20 @@ a {
 /* Resume and skills */
 
 .resumeContainer {
-  padding: 40px 0 0 0;
+  padding: 80px 0 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-color: #e8d44d;
+  color: #0e091c;
 }
 
 .blurb {
   margin: 40px 0 20px 0;
 }
+
+/* technical skills section */
 
 .resumeLeft,
 .resumeDownload {
@@ -186,18 +194,195 @@ a {
 .xpTechBlock {
   width: 100px;
   padding: 20px 0 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.xpTechBlock p {
+  font-size: 16px;
+}
+
+.xpTechBlock img {
+  padding-bottom: 16px;
+}
+
+/* soft skills/attributes */
+
+.whatElseIntro {
+  margin-top: 80px;
+}
+
+.whatElse {
+  display: flex;
+}
+
+.attributesLeft,
+.attributesRight {
+  padding: 0;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.whatElse li {
+  list-style-type: none;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* resume section */
+
+.resumeIntro {
+  text-align: center;
+  width: 80%;
+  margin-top: 80px;
 }
 
 .resumeDownload {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 60px 0 60px 0;
+  margin: 40px 0 60px 0;
 }
 
 .resumeDownload a {
   border: none;
   margin: 20px 0 10px 0;
+  color: #1c1239;
+}
+
+/* Projects */
+
+.projectsContainer {
+  padding: 80px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsContainer h1 {
+  margin: 0 auto;
+  padding: 20px 0 80px 0;
+  width: 80%;
+  text-align: center;
+}
+
+.projectTiles {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectDetails {
+  border: 3px solid #c6d8ff;
+  border-radius: 15px;
+  
+  width:70%;
+  align-self: center;
+
+  padding: 5%;
+  margin: 50px 0 50px 0;
+
+  align-content: center;
+  text-align: center;
+}
+
+.oneProjTitle {
+  text-align: center;
+}
+
+.left, .right {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5%;
+}
+
+.detailimg {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* techstack and links */
+
+.techstack {
+  margin: 2rem 0 2rem 0;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.techstack img {
+  height: 32px;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+  margin: 2rem 0 2rem 0;
+}
+
+.projectLinks a {
+  text-decoration: none;
+  background-color: #e4deba;
+  color: #1c1239;
+  padding: 1rem;
+  width: 70px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* Tooltips */
+
+.tooltip {
+  position: relative;
+  display: inline;
+}
+
+.tooltip .tipText {
+  visibility: hidden;
+  background-color: #e4deba;
+  color: #1c1239;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #e4deba;
+
+  position: absolute;
+  z-index: 500;
+
+  width: 100px;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -55px;
+}
+
+.tooltip:hover .tipText {
+  visibility: visible
+}
+
+.tooltip .tipText::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #e4deba transparent transparent transparent;
 }
 
 
@@ -636,10 +821,6 @@ i {
 .techstack img {
   height: 32px;
   color: #4f7cac;
-}
-
-.mongoose {
-  min-width: 40px;
 }
 
 .projectLinks {

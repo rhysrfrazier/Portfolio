@@ -148,23 +148,14 @@ const projects = [
 ]
 
 export default function Projects() {
-
-    const [selectedProject, setSelectedProject] = useState(null)
-
-    function onClose() {
-        setSelectedProject(null)
-    }
-
-
     return (
-        <div className='projects'>
             <div className='projectsContainer'>
-                <h1 className='allProjH1'>Check out some of my demo projects and works in progress:</h1>
+                <h1>Check out some of my demo projects and works in progress:</h1>
                 <div className='projectTiles'>
                     {projects.map((project) => (
                         <div className='projectDetails' key={project.title} >
                             <div className='left'>
-                                <h2>{project.title}</h2>
+                                <h2 className='oneProjTitle'>{project.title}</h2>
                                 <p>{project.desc}</p>
                                 <div className='techstack' >
                                     {project.techs.map((tech) =>
@@ -184,6 +175,5 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-        </div>
     )
 }
