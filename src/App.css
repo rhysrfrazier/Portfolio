@@ -34,6 +34,7 @@ body a {
 
 .navbar {
   position: fixed;
+  z-index: 1;
   height: 90px;
   top: 0;
   right: 0;
@@ -362,7 +363,6 @@ a {
   border: 1px solid #e4deba;
 
   position: absolute;
-  z-index: 500;
 
   width: 100px;
   bottom: 120%;
