@@ -3,9 +3,10 @@ export default function Resume() {
     return (
         <div className='resumeContainer'>
             <div className='resumeLeft'>
-                <p className='blurb'>
-                    I like front and back end development equally well, and so far have split my skill points pretty evenly between the two. I have experience working with the following technologies:
+                <p>
+                    I'm a generalist, and my skill points are spread evenly between front and back end development. 
                 </p>
+                <p className='blurb'>I have experience working with the following technologies:</p>
                 <div className='xpStack'>
                     <div className='xpTechBlock'>
                         <p>JavaScript</p>
