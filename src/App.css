@@ -12,6 +12,15 @@ body {
   color: #e8d44d;
 }
 
+body p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+body h1 {
+  font-weight: 500;
+}
+
 body a {
   color: #e4deba;
   text-decoration: none;
@@ -70,6 +79,8 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
+  background-color:#1c1239
 }
 
 .burgerMenu a {
@@ -82,6 +93,62 @@ a {
 .lastBurgerLink {
   border-bottom: 0
 }
+
+/* About */
+
+.aboutSection {
+  background-color: #0e091c;
+  margin: 120px 0 0 0;
+}
+
+.insidePics {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutOne {
+  width: 50%;
+  border-radius: 50%;
+  border: 3px solid #c6d8ff;
+  margin: 16px 0 50px 0;
+}
+
+/* Don't show the extra two pictures on mobile */
+
+.aboutTwo {
+  display: none;
+}
+
+.aboutThree {
+  display: none;
+}
+
+/* About text section */
+
+.heyThere {
+  margin: 0 40px 50px 40px;
+}
+
+.likesnDislikes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes {
+  /* border: 1px solid red; */
+  padding: 0 20px 0 25px;
+}
+
+.dislikes {
+  /* border: 1px solid red; */
+  padding: 0 0 0 50px;
+}
+
+.likes li,
+.dislikes li {
+  margin-bottom: 7px;
+}
+
 
 /* Nav and body and universal
 
