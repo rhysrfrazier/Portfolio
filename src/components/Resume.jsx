@@ -1,7 +1,7 @@
 export default function Resume() {
 
     return (
-        <div className='resumeContainer'>
+        <div className='resumeContainer' id='resume'>
             <div className='resumeLeft'>
                 <p>
                     I'm a generalist, and my skill points are spread evenly between front and back end development.

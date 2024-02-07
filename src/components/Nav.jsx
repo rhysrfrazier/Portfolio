@@ -1,9 +1,9 @@
-import { Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
 
 export default function Nav() {
 
-    const location = useLocation()
+    const observer = useRef()
     const [burgerState, setBurgerState] = useState(false)
 
     const makeActive = (routeSlug) => {
@@ -25,7 +25,7 @@ export default function Nav() {
     return (
         <div className='navbar'>
             <div className='navName'>
-                <img className='RFlogo' src='RF.png' alt='RF initials in the style of the JavaScript logo'/>
+                <img className='RFlogo' src='RF.png' alt='RF initials in the style of the JavaScript logo' />
             </div>
             <div className='navLinks'>
                 <Link to='/' >
@@ -47,16 +47,36 @@ export default function Nav() {
                 </i>
             </button>
             {burgerState ? <div className='burgerMenu'>
-                <Link to='/' onClick={revealMenu}>
+                <Link
+                    to='/'
+                    onClick={() => {
+                        let about = document.getElementById('about');
+                        revealMenu();
+                        about.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}
+                ><h2>About</h2></Link>
+                {/* <Link to='/' onClick={revealMenu}>
                     <h2 className={makeActive('/')}>About</h2>
-                </Link>
-                <Link to='/resume' onClick={revealMenu}>
+                </Link> */}
+                <Link to='/resume' onClick={() => {
+                        let resume = document.getElementById('resume');
+                        revealMenu();
+                        resume.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}>
                     <h2 className={makeActive('/resume')}>Skills and Experience</h2>
                 </Link>
-                <Link to='/projects' onClick={revealMenu}>
+                <Link to='/projects' onClick={() => {
+                        let projects = document.getElementById('projects');
+                        revealMenu();
+                        projects.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}>
                     <h2 className={makeActive('/projects')}>Projects</h2>
                 </Link>
-                <Link to='/contact' onClick={revealMenu}>
+                <Link to='/contact' onClick={() => {
+                        let contact = document.getElementById('contact');
+                        revealMenu();
+                        contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}>
                     <h2 className={makeActive('/contact')}>Get in Touch</h2>
                 </Link>
                 <Link to='https://github.com/rhysrfrazier' target='_blank' onClick={revealMenu}>

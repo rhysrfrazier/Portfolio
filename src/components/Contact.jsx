@@ -19,7 +19,7 @@ export default function Contact() {
     }
 
     return (
-        <div className='contactContainer'>
+        <div className='contactContainer' id='contact'>
             <h1>Don't be a Stranger!</h1>
             {/* <p>Find me on  <a href='https://www.linkedin.com/in/rhysrfrazier/' target='_blank' className='tempLink'>LinkedIn</a> or <a href='https://github.com/rhysrfrazier' target='_blank' className='tempLink'>GitHub</a> -- or <a href='mailto:rhysrfrazier@gmail.com' target='_blank' className='tempLink'>email me</a> directly.</p> */}
             <form className='contactForm' onSubmit={handleSubmit}>
@@ -52,7 +52,7 @@ export default function Contact() {
                         onChange={e => setMessage(e.target.value)}
                     />
                 </label>
-                
+
                 {/* this one's for the bots */}
                 <input type='hidden' name='nope' value={nope} onChange={e => setNope(e.target.value)} />
 

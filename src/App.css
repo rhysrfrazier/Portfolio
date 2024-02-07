@@ -391,7 +391,7 @@ a {
   background-color: #e8d44d;
   color: #0e091c;
 
-  padding: 15vh 0 30vh 0;
+  padding: 20vh 0 25vh 0;
 
   display: flex;
   flex-direction: column;
@@ -455,6 +455,10 @@ textarea {
   font-family: 'Fira Code', monospace;
   background-color: #1c1239;
   color: #e4deba;
+}
+
+.footer {
+  display: none;
 }
 
 
