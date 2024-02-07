@@ -10,35 +10,35 @@ const projects = [
         demo: 'https://drive.google.com/file/d/1URXGJqfsa5ETjuN_e1XLM0NLBSkp2U7E/view?usp=sharing',
         techs: [
             <div className='tooltip'>
-                <img src='javascript-logo-svgrepo-com.png' alt='Javascript' />
+                <img src='javascript.svg' alt='Javascript' />
                 <span className='tipText'>JavaScript</span>
             </div>,
             <div className='tooltip'>
-                <img src='html5-01-svgrepo-com.png' alt='HTML5' />
+                <img src='html5.svg' alt='HTML5' />
                 <span className='tipText'>HTML5</span>
             </div>,
             <div className='tooltip'>
-                <img src='css3-02-svgrepo-com.png' alt='CSS3' />
+                <img src='css.svg' alt='CSS3' />
                 <span className='tipText'>CSS3</span>
             </div>,
             <div className='tooltip'>
-                <img src='pythonBlue.png' alt='Python3' />
+                <img src='python.svg' alt='Python3' />
                 <span className='tipText'>Python3</span>
             </div>,
             <div className='tooltip'>
-                <img src='djangoBlue.png' alt='Django' />
+                <img src='django.svg' alt='Django' />
                 <span className='tipText'>Django</span>
             </div>,
             <div className='tooltip'>
-                <img src='postgresBlue.png' alt='postgreSQL' />
+                <img src='psql.svg' alt='postgreSQL' />
                 <span className='tipText'>PostgreSQL</span>
             </div>,
             <div className='tooltip'>
-                <img src='react-svgrepo-com.png' alt='React' />
+                <img src='react.svg' alt='React' />
                 <span className='tipText'>React</span>
             </div>,
             <div className='tooltip'>
-                <img src='node-js-svgrepo-com.png' alt='Node JS' />
+                <img src='nodejs.svg' alt='Node JS' />
                 <span className='tipText'>Node.js</span>
             </div>
         ]
@@ -52,35 +52,35 @@ const projects = [
         demo: '',
         techs: [
             <div className='tooltip'>
-                <img src='javascript-logo-svgrepo-com.png' alt='Javascript' />
+                <img src='javascript.svg' alt='Javascript' />
                 <span className='tipText'>JavaScript</span>
             </div>,
             <div className='tooltip'>
-                <img src='html5-01-svgrepo-com.png' alt='HTML5' />
+                <img src='html5.svg' alt='HTML5' />
                 <span className='tipText'>HTML5</span>
             </div>,
             <div className='tooltip'>
-                <img src='css3-02-svgrepo-com.png' alt='CSS3' />
+                <img src='css.svg' alt='CSS3' />
                 <span className='tipText'>CSS3</span>
             </div>,
             <div className='tooltip'>
-                <img src='mongodb-svgrepo-com.png' alt='MongoDB' />
+                <img src='mongodb.svg' alt='MongoDB' />
                 <span className='tipText'>MongoDB</span>
             </div>,
             <div className='tooltip'>
-                <img src='bluemongoose.png' alt='Mongoose' className='mongoose' />
+                <img src='mongoose.png' alt='Mongoose' className='mongoose' />
                 <span className='tipText'>Mongoose</span>
             </div>,
             <div className='tooltip'>
-                <img src='blueexpress.png' alt='express' />
+                <img src='whiteexpress.svg' alt='express' />
                 <span className='tipText'>Express</span>
             </div>,
             <div className='tooltip'>
-                <img src='react-svgrepo-com.png' alt='React' />
+                <img src='react.svg' alt='React' />
                 <span className='tipText'>React</span>
             </div>,
             <div className='tooltip'>
-                <img src='node-js-svgrepo-com.png' alt='Node JS' />
+                <img src='nodejs.svg' alt='Node JS' />
                 <span className='tipText'>Node.js</span>
             </div>
         ]
@@ -94,31 +94,35 @@ const projects = [
         demo: 'https://drive.google.com/file/d/1OgI3lM5diENGOzimUn5YB2AlpK0UrBeu/view?usp=sharing',
         techs: [
             <div className='tooltip'>
-                <img src='javascript-logo-svgrepo-com.png' alt='Javascript' />
+                <img src='javascript.svg' alt='Javascript' />
                 <span className='tipText'>JavaScript</span>
             </div>,
             <div className='tooltip'>
-                <img src='html5-01-svgrepo-com.png' alt='HTML5' />
+                <img src='html5.svg' alt='HTML5' />
                 <span className='tipText'>HTML5</span>
             </div>,
             <div className='tooltip'>
-                <img src='css3-02-svgrepo-com.png' alt='CSS3' />
+                <img src='css.svg' alt='CSS3' />
                 <span className='tipText'>CSS3</span>
             </div>,
             <div className='tooltip'>
-                <img src='mongodb-svgrepo-com.png' alt='MongoDB' />
+                <img src='mongodb.svg' alt='MongoDB' />
                 <span className='tipText'>MongoDB</span>
             </div>,
             <div className='tooltip'>
-                <img src='bluemongoose.png' alt='Mongoose' className='mongoose' />
+                <img src='mongoose.png' alt='Mongoose' className='mongoose' />
                 <span className='tipText'>Mongoose</span>
             </div>,
             <div className='tooltip'>
-                <img src='blueexpress.png' alt='express' />
+                <img src='whiteexpress.svg' alt='express' />
                 <span className='tipText'>Express</span>
             </div>,
             <div className='tooltip'>
-                <img src='node-js-svgrepo-com.png' alt='Node JS' />
+                <img src='react.svg' alt='React' />
+                <span className='tipText'>React</span>
+            </div>,
+            <div className='tooltip'>
+                <img src='nodejs.svg' alt='Node JS' />
                 <span className='tipText'>Node.js</span>
             </div>
         ]
@@ -132,15 +136,15 @@ const projects = [
         demo: '',
         techs: [
             <div className='tooltip'>
-                <img src='javascript-logo-svgrepo-com.png' alt='Javascript' />
+                <img src='javascript.svg' alt='Javascript' />
                 <span className='tipText'>JavaScript</span>
             </div>,
             <div className='tooltip'>
-                <img src='html5-01-svgrepo-com.png' alt='HTML5' />
+                <img src='html5.svg' alt='HTML5' />
                 <span className='tipText'>HTML5</span>
             </div>,
             <div className='tooltip'>
-                <img src='css3-02-svgrepo-com.png' alt='CSS3' />
+                <img src='css.svg' alt='CSS3' />
                 <span className='tipText'>CSS3</span>
             </div>
         ]
