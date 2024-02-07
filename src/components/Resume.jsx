@@ -10,63 +10,63 @@ export default function Resume() {
                 <div className='xpStack'>
                     <div className='xpTechBlock'>
                         <p>JavaScript</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='javascript.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>HTML5</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='html5.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>CSS3</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='css.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>React</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='react.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>Next.JS</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='nextjs.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>PostgreSQL</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='psql.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>Sequelize</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='sequelize.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
-                        <p>Node</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <p>Node.JS</p>
+                        <img className='xpIcon' src='nodejs.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>Express</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='express.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>MongoDB</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='mongodb.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>Mongoose</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='mongoose.png' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>Markdown</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='markdown.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>C#</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='csharp.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>Python</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='python.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>Django</p>
-                        <img className='xpIcon' src='d' aria-hidden='true'></img>
+                        <img className='xpIcon' src='django.svg' aria-hidden='true'></img>
                     </div>
                 </div>
 
@@ -74,31 +74,30 @@ export default function Resume() {
                 <div className='whatElse'>
                     <ul className='attributesLeft'>
                         <li>
-                            <img src='d' aria-hidden='true' className='xpIcon' />
-                            Hard worker
+                            <img src='userfocus.svg' aria-hidden='true' className='xpIcon' />
+                            Customer/user focused
                         </li>
                         <li>
-                            <img src='d' aria-hidden='true' className='xpIcon' />
+                            <img src='problemsolving.svg' aria-hidden='true' className='xpIcon' />
                             Tenacious problem-solver
                         </li>
                         <li>
-                            <img src='d' aria-hidden='true' className='xpIcon' />
-                            Cross-functional team player
+                            <img src='communication.svg' aria-hidden='true' className='xpIcon' />
+                            Courteous, professional communicator
                         </li>
                     </ul>
                     <ul className='attributesRight'>
                         <li>
-                            <img src='d' aria-hidden='true' className='xpIcon' />
+                            <img src='learning.svg' aria-hidden='true' className='xpIcon' />
                             Eager to learn
                         </li>
                         <li>
-                            <img src='d' aria-hidden='true' className='xpIcon' />
-                            Customer/user focused
+                            <img src='collaboration.svg' aria-hidden='true' className='xpIcon' />
+                            Cross-functional team player
                         </li>
-
                         <li>
-                            <img src='d' aria-hidden='true' className='xpIcon' />
-                            Courteous, professional communicator
+                            <img src='working.svg' aria-hidden='true' className='xpIcon' />
+                            Hard worker
                         </li>
                     </ul>
                 </div>
