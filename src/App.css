@@ -411,8 +411,6 @@ a {
   width: 80%;
 }
 
-
-
 /* un-cramping the name and email fields */
 
 .nameEmail {
@@ -463,8 +461,22 @@ textarea {
   color: #e4deba;
 }
 
+/* get rid of the footer on mobile */
+
 .footer {
   display: none;
+}
+
+/* larger screens */
+
+@media screen and (min-width: 800px) {
+
+/*footer*/
+
+.footer {
+  display: flex;
+}
+
 }
 
 
