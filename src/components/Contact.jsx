@@ -9,7 +9,7 @@ export default function Contact() {
     const [nope, setNope] = useState('')
 
     return (
-        <div className='contactContainer' id='contact'>
+        <div className='contactContainer' id='contact' data-section>
             <h1>Don't be a Stranger!</h1>
             {/* <p>Find me on  <a href='https://www.linkedin.com/in/rhysrfrazier/' target='_blank' className='tempLink'>LinkedIn</a> or <a href='https://github.com/rhysrfrazier' target='_blank' className='tempLink'>GitHub</a> -- or <a href='mailto:rhysrfrazier@gmail.com' target='_blank' className='tempLink'>email me</a> directly.</p> */}
             <form className='contactForm' action='https://formsubmit.io/send/rhysrfrazier@gmail.com' method='POST'>

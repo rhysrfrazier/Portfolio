@@ -1,18 +1,10 @@
 import { Link } from 'react-router-dom'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 
-export default function Nav() {
+export default function Nav({selectedItem}) {
+    console.log(selectedItem)
 
-    const observer = useRef()
     const [burgerState, setBurgerState] = useState(false)
-
-    const makeActive = (routeSlug) => {
-        if (routeSlug === location.pathname) {
-            return 'selected'
-        } else {
-            return ''
-        }
-    }
 
     const revealMenu = () => {
         if (burgerState === false) {
@@ -32,19 +24,39 @@ export default function Nav() {
                 </div>
             </div>
 
-             {/* desktop */}
+            {/* desktop */}
             <div className='navLinks'>
-                <Link to='/' >
-                    <h2 className={makeActive('/')}>About</h2>
+                <Link
+                    onClick={() => {
+                        let about = document.getElementById('about');
+                        about.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}
+                >
+                    <h2 className={selectedItem === 'about' ? 'selected' : ''}>About</h2>
                 </Link>
-                <Link to='/resume'>
-                    <h2 className={makeActive('/resume')}>Skills and Experience</h2>
+                <Link
+                    onClick={() => {
+                        let resume = document.getElementById('resume');
+                        resume.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                >
+                    <h2 className={selectedItem === 'resume' ? 'selected' : ''}>Skills and Experience</h2>
                 </Link>
-                <Link to='/projects' >
-                    <h2 className={makeActive('/projects')}>Projects</h2>
+                <Link
+                    onClick={() => {
+                        let projects = document.getElementById('projects');
+                        projects.scrollIntoView({ behavior: 'smooth'});
+                    }}
+                >
+                    <h2 className={selectedItem === 'projects' ? 'selected' : ''}>Projects</h2>
                 </Link>
-                <Link to='/contact'>
-                    <h2 className={makeActive('/contact')}>Get in Touch</h2>
+                <Link
+                    onClick={() => {
+                        let contact = document.getElementById('contact');
+                        contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}
+                >
+                    <h2 className={selectedItem === 'contact' ? 'selected' : ''}>Get in Touch</h2>
                 </Link>
             </div>
 
@@ -56,32 +68,31 @@ export default function Nav() {
             </button>
             {burgerState ? <div className='burgerMenu'>
                 <Link
-                    to='/'
                     onClick={() => {
                         let about = document.getElementById('about');
                         revealMenu();
                         about.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }}
                 ><h2>About</h2></Link>
-                <Link to='/resume' onClick={() => {
-                        let resume = document.getElementById('resume');
-                        revealMenu();
-                        resume.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }}>
+                <Link onClick={() => {
+                    let resume = document.getElementById('resume');
+                    revealMenu();
+                    resume.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}>
                     <h2 className={makeActive('/resume')}>Skills and Experience</h2>
                 </Link>
-                <Link to='/projects' onClick={() => {
-                        let projects = document.getElementById('projects');
-                        revealMenu();
-                        projects.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }}>
+                <Link onClick={() => {
+                    let projects = document.getElementById('projects');
+                    revealMenu();
+                    projects.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}>
                     <h2 className={makeActive('/projects')}>Projects</h2>
                 </Link>
-                <Link to='/contact' onClick={() => {
-                        let contact = document.getElementById('contact');
-                        revealMenu();
-                        contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }}>
+                <Link onClick={() => {
+                    let contact = document.getElementById('contact');
+                    revealMenu();
+                    contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}>
                     <h2 className={makeActive('/contact')}>Get in Touch</h2>
                 </Link>
                 <Link to='https://github.com/rhysrfrazier' target='_blank' onClick={revealMenu}>

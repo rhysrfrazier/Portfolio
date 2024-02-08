@@ -153,7 +153,7 @@ const projects = [
 
 export default function Projects() {
     return (
-            <div className='projectsContainer' id='projects'>
+            <div className='projectsContainer' id='projects' data-section>
                 <h1>Check out some of my demo projects and works in progress:</h1>
                 <div className='projectTiles'>
                     {projects.map((project) => (

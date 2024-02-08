@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className='aboutSection' id='about'>
+        <div className='aboutSection' id='about' data-section>
             <div className='pictures'>
                 <div className='insidePics'>
                     <img className='aboutOne' alt="Rhys and Oliver the cat sitting together" src='me+ollie.jpg' />
