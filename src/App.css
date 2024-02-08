@@ -602,6 +602,23 @@ textarea {
     left: 47%;
   }
 
+  /* Resume (skills and xp) */
+
+  .resumeLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .xpStack {
+    width: 70%;
+    justify-content: center;
+  }
+
+  .xpTechBlock {
+    padding: 20px;
+  }
+
 }
 
 
