@@ -8,16 +8,6 @@ export default function Contact() {
     const [message, setMessage] = useState('')
     const [nope, setNope] = useState('')
 
-    const handleSubmit = (e) => {
-        if (nope !== '') {
-            console.error('bot')
-        }
-        e.preventDefault()
-        console.log(name, email, subject, message)
-        window.alert("Message sent! I'll get back to you as soon as I can.")
-        setTimeout(() => location.reload(), 50)
-    }
-
     return (
         <div className='contactContainer' id='contact'>
             <h1>Don't be a Stranger!</h1>
@@ -61,7 +51,6 @@ export default function Contact() {
                 <div className='sendMessageContainer'>
                     <button type='submit'
                         className='sendMessage'
-                        // onClick={handleSubmit}
                     >Send</button>
                 </div>
             </form>

@@ -638,7 +638,22 @@ textarea {
 
   /* contact */
 
-  
+  .contactForm {
+    width: 40%;
+  }
+
+  .nameEmail {
+    width: 99%;
+  }
+
+  .name input,
+  .email input {
+    width: 70%;
+  }
+
+  .sendMessage {
+    padding: 1% 5% 1% 5%;
+  }
 
 }
 
