@@ -26,8 +26,13 @@ export default function Nav() {
         <div className='navbar'>
             <div className='navName'>
                 <img className='RFlogo' src='RF.png' alt='RF initials in the style of the JavaScript logo' />
-                <p>Rhys Frazier</p>
+                <div className='namenTitle'>
+                    <p>Rhys Frazier</p>
+                    <p className='jobTitle'>Junior Software Engineer</p>
+                </div>
             </div>
+
+             {/* desktop */}
             <div className='navLinks'>
                 <Link to='/' >
                     <h2 className={makeActive('/')}>About</h2>
@@ -42,6 +47,8 @@ export default function Nav() {
                     <h2 className={makeActive('/contact')}>Get in Touch</h2>
                 </Link>
             </div>
+
+            {/* mobile menu */}
             <button className='navBurger' onClick={revealMenu}>
                 <i className="fa-solid fa-bars fa-3x" aria-hidden='true'>
                     <span className='fa-sr-only'>Open navigation menu</span>
@@ -56,9 +63,6 @@ export default function Nav() {
                         about.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }}
                 ><h2>About</h2></Link>
-                {/* <Link to='/' onClick={revealMenu}>
-                    <h2 className={makeActive('/')}>About</h2>
-                </Link> */}
                 <Link to='/resume' onClick={() => {
                         let resume = document.getElementById('resume');
                         revealMenu();

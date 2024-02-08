@@ -103,7 +103,7 @@ export default function Resume() {
                 </div>
             </div>
 
-            <p className='resumeIntro'>Check out my full resume for job history:</p>
+            <p className='resumeIntro'>Interested in my job history? Download my full resume:</p>
             <div className='resumeDownload'>
                 <a href='Rhys_Frazier_Resume.pdf' download='Rhys_Frazier_Full_CV'>
                     <i className="fa-solid fa-file-pdf fa-10x resumePDF" aria-hidden='true'>
