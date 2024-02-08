@@ -17,7 +17,6 @@ function App() {
   useEffect(() => {
     observer.current = new IntersectionObserver((entries) => {
       const visibleSection = entries.find((entry) => entry.isIntersecting)?.target;
-      console.log(entries)
       if (visibleSection) {
         setSelectedItem(visibleSection.id);
       }

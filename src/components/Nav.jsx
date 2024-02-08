@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 export default function Nav({selectedItem}) {
-    console.log(selectedItem)
 
     const [burgerState, setBurgerState] = useState(false)
 
