@@ -13,7 +13,7 @@ export default function Contact() {
             <h1>Don't be a Stranger!</h1>
             {/* <p>Find me on  <a href='https://www.linkedin.com/in/rhysrfrazier/' target='_blank' className='tempLink'>LinkedIn</a> or <a href='https://github.com/rhysrfrazier' target='_blank' className='tempLink'>GitHub</a> -- or <a href='mailto:rhysrfrazier@gmail.com' target='_blank' className='tempLink'>email me</a> directly.</p> */}
             <form className='contactForm' action='https://formsubmit.io/send/rhysrfrazier@gmail.com' method='POST'>
-            <input name="_redirect" type="hidden" id="name" value="http://localhost:5173/" />
+            <input name="_redirect" type="hidden" id="name" value="https://www.rhysfrazier.com/" />
                 <div className='nameEmail'>
                     <label className='name'>
                         <span className='labelText'>Your name:</span>
