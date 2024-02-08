@@ -35,7 +35,7 @@ body a {
 .navbar {
   position: fixed;
   z-index: 1;
-  height: 90px;
+  height: 100px;
   top: 0;
   right: 0;
   left: 0;
@@ -47,9 +47,20 @@ body a {
   justify-content: space-between;
 }
 
+.navName {
+  margin: 15px 15px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navName p {
+  margin: 5px 0 0 0;
+  font-size: 10px;
+}
+
 .RFlogo {
-  max-width: 50px;
-  margin: 15px;
+  max-width: 60px;
 }
 
 /* hide the links that aren't in the burger until the screen is bigger */
@@ -205,7 +216,7 @@ a {
   font-size: 16px;
 }
 
-.xpIcon{
+.xpIcon {
   max-width: 60px;
 }
 
@@ -320,7 +331,7 @@ a {
 
 .techstack {
   margin: 2rem 0 2rem 0;
-  width:100%;
+  width: 100%;
 
   display: flex;
   justify-content: space-evenly;
@@ -395,7 +406,7 @@ a {
   background-color: #e8d44d;
   color: #0e091c;
 
-  padding: 20vh 0 25vh 0;
+  padding: 18vh 0 30vh 0;
 
   display: flex;
   flex-direction: column;
@@ -451,7 +462,7 @@ textarea {
 
 .sendMessage {
   margin-top: 35px;
-  padding: 2% 10% 2% 10%;
+  padding: 2% 8% 2% 8%;
 
   border-radius: 7px;
   border: none;
@@ -459,6 +470,7 @@ textarea {
   font-family: 'Fira Code', monospace;
   background-color: #1c1239;
   color: #e4deba;
+  font-size: 18px;
 }
 
 /* get rid of the footer on mobile */
@@ -469,13 +481,67 @@ textarea {
 
 /* larger screens */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
 
-/*footer*/
+  /*footer*/
 
-.footer {
-  display: flex;
-}
+  .footer {
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+
+    background-color: #1c1239;
+  }
+
+  .socials {
+    margin-left: 20px;
+    width: 15%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .resumeLink,
+  .socials a {
+    border: none;
+    width: auto;
+
+    color: #e8d44d;
+  }
+
+  /* below is the full resume link */
+
+  .socials img {
+    height: 50px;
+  }
+
+  .footerContact {
+    padding: 5px 20px 5px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+  }
+
+  .footerContact p {
+    margin: 0;
+  }
+
+  .footerContact a {
+    color:#e8d44d;
+    border: none;
+  }
+
+  /* about */
+
+  
 
 }
 

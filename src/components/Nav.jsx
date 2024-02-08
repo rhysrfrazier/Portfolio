@@ -26,6 +26,7 @@ export default function Nav() {
         <div className='navbar'>
             <div className='navName'>
                 <img className='RFlogo' src='RF.png' alt='RF initials in the style of the JavaScript logo' />
+                <p>Rhys Frazier</p>
             </div>
             <div className='navLinks'>
                 <Link to='/' >
