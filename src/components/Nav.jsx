@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-export default function Nav({selectedItem}) {
+export default function Nav({ selectedItem }) {
 
     const [burgerState, setBurgerState] = useState(false)
 
@@ -44,7 +44,7 @@ export default function Nav({selectedItem}) {
                 <Link
                     onClick={() => {
                         let projects = document.getElementById('projects');
-                        projects.scrollIntoView({ behavior: 'smooth'});
+                        projects.scrollIntoView({ behavior: 'smooth' });
                     }}
                 >
                     <h2 className={selectedItem === 'projects' ? 'selected' : ''}>Projects</h2>
@@ -72,27 +72,27 @@ export default function Nav({selectedItem}) {
                         revealMenu();
                         about.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }}
-                ><h2>About</h2></Link>
+                ><h2 >About</h2></Link>
                 <Link onClick={() => {
                     let resume = document.getElementById('resume');
                     revealMenu();
                     resume.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}>
-                    <h2 className={makeActive('/resume')}>Skills and Experience</h2>
+                    <h2 >Skills and Experience</h2>
                 </Link>
                 <Link onClick={() => {
                     let projects = document.getElementById('projects');
                     revealMenu();
                     projects.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}>
-                    <h2 className={makeActive('/projects')}>Projects</h2>
+                    <h2 >Projects</h2>
                 </Link>
                 <Link onClick={() => {
                     let contact = document.getElementById('contact');
                     revealMenu();
                     contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}>
-                    <h2 className={makeActive('/contact')}>Get in Touch</h2>
+                    <h2 >Get in Touch</h2>
                 </Link>
                 <Link to='https://github.com/rhysrfrazier' target='_blank' onClick={revealMenu}>
                     <h2>GitHub</h2>
