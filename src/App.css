@@ -493,6 +493,56 @@ input {
   display: none;
 }
 
+/* email confirmation screen */
+
+.confirmation {
+  border: 2px solid #0e091c;
+  background-color: #0e091c;
+  min-height: 99vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.airplane {
+  width: 10%;
+  position: relative;
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 7px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.confirmation p {
+  margin: 60px 60px 40px 60px;
+  text-align: center;
+}
+
+.confirmation a {
+  border: none;
+  border-radius: 5px;
+
+  width: 300px;
+  padding: 10px 0 10px 0;
+  
+  background-color: #e4deba;
+  color:#1c1239;
+}
+
 /* larger screens */
 
 @media screen and (min-width: 1000px) {
@@ -716,4 +766,3 @@ input {
   }
 
 }
-
