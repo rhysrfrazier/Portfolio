@@ -13,6 +13,10 @@ export default function Resume() {
                         <img className='xpIcon' src='javascript.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
+                        <p>TypeScript</p>
+                        <img className='xpIcon' style={{borderRadius: "8px"}} src='typescript.svg' aria-hidden='true'></img>
+                    </div>
+                    <div className='xpTechBlock'>
                         <p>HTML5</p>
                         <img className='xpIcon' src='html5.svg' aria-hidden='true'></img>
                     </div>
@@ -67,6 +71,10 @@ export default function Resume() {
                     <div className='xpTechBlock'>
                         <p>Django</p>
                         <img className='xpIcon' src='django.svg' aria-hidden='true'></img>
+                    </div>
+                    <div className='xpTechBlock'>
+                        <p>Figma</p>
+                        <img className='xpIcon' src='apps-figma.svg' aria-hidden='true'></img>
                     </div>
                 </div>
 
