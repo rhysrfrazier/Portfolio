@@ -14,7 +14,7 @@ export default function Resume() {
                     </div>
                     <div className='xpTechBlock'>
                         <p>TypeScript</p>
-                        <img className='xpIcon' style={{borderRadius: "8px"}} src='typescript.svg' aria-hidden='true'></img>
+                        <img className='xpIcon' src='typescript.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>HTML5</p>
@@ -23,6 +23,10 @@ export default function Resume() {
                     <div className='xpTechBlock'>
                         <p>CSS3</p>
                         <img className='xpIcon' src='css.svg' aria-hidden='true'></img>
+                    </div>
+                    <div className='xpTechBlock'>
+                        <p>Tailwind</p>
+                        <img className='xpIcon' src='tailwind-svgrepo-com.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
                         <p>React</p>

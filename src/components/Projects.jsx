@@ -2,6 +2,36 @@ import { useState } from "react"
 
 const projects = [
     {
+        title: "Next.JS Demo Site",
+        img: 'acmeProj.png',
+        desc: "A demo invoice dashboard made while learning to use Next.JS and getting more exposure to Typescript and Tailwind. In the current iteration you can perform full CRUD operations on the invoices and view and search users. Sign in with user@nextmail.com and the password 123456 to test it out, or check out the GitHUb repo for more info!",
+        github: 'https://github.com/rhysrfrazier/nextjstutorial',
+        app: 'https://nextjs-demo-delta-roan.vercel.app/',
+        demo: '',
+        techs: [
+            <div className='tooltip'>
+                <img src='typescript.svg' alt='Typescript'/>
+                <span className='tipText' >Typescript</span>
+            </div>,
+            <div className='tooltip'>
+                <img src='tailwind-svgrepo-com.svg' alt='Tailwind' />
+                <span className='tipText'>Tailwind</span>
+            </div>,
+            <div className='tooltip'>
+                <img src='nextjs-white.svg' alt='Next.js' />
+                <span className='tipText'>Next.js</span>
+            </div>,
+            <div className='tooltip'>
+                <img src='psql.svg' alt='postgreSQL' />
+                <span className='tipText'>PostgreSQL</span>
+            </div>,
+            <div className='tooltip'>
+                <img src='nodejs.svg' alt='Node JS' />
+                <span className='tipText'>Node.js</span>
+            </div>
+        ]
+    },
+    {
         title: 'Pac(ker)Man',
         img: 'p4Screen.png',
         desc: "Pac(ker)Man is a light-weight inventory management system to help keep track of supply locations and states of repair through database SQL manipulation when packing and unpacking. The current iteration allows user to pack and unpack items based on a single, user-generated event to be attended.",
@@ -153,31 +183,31 @@ const projects = [
 
 export default function Projects() {
     return (
-            <div className='projectsContainer' id='projects' data-section>
-                <h1>Check out some of my demo projects and works in progress:</h1>
-                <div className='projectTiles'>
-                    {projects.map((project) => (
-                        <div className='projectDetails' key={project.title} >
-                            <div className='left'>
-                                <h2 className='oneProjTitle'>{project.title}</h2>
-                                <p>{project.desc}</p>
-                                <div className='techstack' >
-                                    {project.techs.map((tech) =>
-                                        (tech)
-                                    )}
-                                </div>
-                                <div className='projectLinks'>
-                                    <a href={project.github} target='_blank'>GitHub</a>
-                                    {project.app !== '' ? <a href={project.app} target='_blank'>App</a> : null}
-                                    {project.demo !== '' ? <a href={project.demo} target='_blank'>Demo</a> : null}
-                                </div>
+        <div className='projectsContainer' id='projects' data-section>
+            <h1>Check out some of my demo projects and works in progress:</h1>
+            <div className='projectTiles'>
+                {projects.map((project) => (
+                    <div className='projectDetails' key={project.title} >
+                        <div className='left'>
+                            <h2 className='oneProjTitle'>{project.title}</h2>
+                            <p>{project.desc}</p>
+                            <div className='techstack' >
+                                {project.techs.map((tech) =>
+                                    (tech)
+                                )}
                             </div>
-                            <div className='right'>
-                                <img className='detailimg' src={project.img} alt='screenshot of app homepage' />
+                            <div className='projectLinks'>
+                                <a href={project.github} target='_blank'>GitHub</a>
+                                {project.app !== '' ? <a href={project.app} target='_blank'>App</a> : null}
+                                {project.demo !== '' ? <a href={project.demo} target='_blank'>Demo</a> : null}
                             </div>
                         </div>
-                    ))}
-                </div>
+                        <div className='right'>
+                            <img className='detailimg' src={project.img} alt='screenshot of app homepage' />
+                        </div>
+                    </div>
+                ))}
             </div>
+        </div>
     )
 }
