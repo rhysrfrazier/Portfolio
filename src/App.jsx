@@ -21,7 +21,7 @@ function App() {
         setSelectedItem(visibleSection.id);
       }
     },
-    {threshold: .2}
+    {threshold: .1}
     );
 
     const sections = document.querySelectorAll('[data-section]');

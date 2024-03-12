@@ -37,6 +37,10 @@ export default function Resume() {
                         <img className='xpIcon' src='nextjs.svg' aria-hidden='true'></img>
                     </div>
                     <div className='xpTechBlock'>
+                        <p>Cypress</p>
+                        <img className='xpIcon' src='Cypress_Logomark_Dark-Color.png' aria-hidden='true'></img>
+                    </div>
+                    <div className='xpTechBlock'>
                         <p>PostgreSQL</p>
                         <img className='xpIcon' src='psql.svg' aria-hidden='true'></img>
                     </div>
